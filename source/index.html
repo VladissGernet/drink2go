@@ -33,8 +33,62 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
-  <header class="header">Шапка</header>
+<body class="page">
+  <header class="page__header page-header">
+    <nav class="page-header__navigation container main-navigation">
+      <a class="main-navigation__logo logo" href="#">
+        <img class="logo__img" src="img/general/logo.svg" width="130" height="30" alt="Логотип">
+      </a>
+      <ul class="main-navigation__site-navigation site-navigation visually-hidden">
+        <li class="site-navigation__item">
+          <a class="site-navigation__link site-navigation__link--active" href="#">Главная</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#">Каталог</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#">Доставка</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#">О нас</a>
+        </li>
+      </ul>
+      <ul class="main-navigation__user-navigation user-navigation">
+        <li class="user-navigation__item user-navigation-item">
+          <a class="user-navigation-item__link" href="#">
+            <div class="user-navigation-item__img-container">
+              <svg class="user-navigation-item__img">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </div>
+            <span class="visually-hidden">Избранное</span>
+            <span class="user-navigation-item__notification notification-badge">3</span>
+          </a>
+        </li>
+        <li class="user-navigation__item user-navigation-item">
+          <a class="user-navigation-item__link" href="#">
+            <div class="user-navigation-item__img-container">
+              <svg class="user-navigation-item__img">
+                <use xlink:href="img/stack.svg#notifications"></use>
+              </svg>
+            </div>
+            <span class="visually-hidden">Уведомления</span>
+            <span class="user-navigation-item__notification notification-badge">1</span>
+          </a>
+        </li>
+        <li class="user-navigation__item user-navigation-item">
+          <a class="user-navigation-item__link" href="#">
+            <div class="user-navigation-item__img-container">
+              <svg class="user-navigation-item__img">
+                <use xlink:href="img/stack.svg#user"></use>
+              </svg>
+            </div>
+            <span class="user-navigation-item__caption">Личный кабинет</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <main class="main">
     content
     <button class="button" type="button">Order</button>
