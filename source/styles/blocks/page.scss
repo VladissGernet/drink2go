@@ -1,0 +1,6 @@
+.page {
+  margin: 0;
+  min-width: 320px;
+  background-color: $base-white;
+  @include general-font;
+}

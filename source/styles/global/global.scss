@@ -5,13 +5,10 @@ html {
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
   //Sticky footer
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  @include general-font;
 }
 
 //Sticky footer
