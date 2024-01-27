@@ -1,8 +1,23 @@
 /* здесь используйте глобальные переменные */
 
-//Colors
+//Base colors
 $base-black: #333333;
+$base-white: #ffffff;
+$base-grey: #bdbdbd;
 $base-primary: #7859cf;
+$base-secondary: #f0ebff;
+
+//Alt colors
+$primary-lighter: #9070ec;
+$primary-darker: #593cac;
+$light-grey: #e2e2e2;
+$primary-opacity: rgba (120, 89, 207, 0.25);
+
+//Background colors
+$lightest-grey: #e2e2e2;
+$flat-white: #f3ebe1;
+$lavender-latte: #eae6fc;
+$Espresso: #eae6fc;
 
 //Resolutions
 $mobile-width: 767px;
