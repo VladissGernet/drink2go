@@ -8,6 +8,10 @@
   margin: 12px 0;
 }
 
+.main-navigation__site-navigation {
+  @include list-reset;
+}
+
 .main-navigation__user-navigation {
   @include list-reset;
   margin-left: auto;
