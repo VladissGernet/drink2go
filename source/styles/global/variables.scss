@@ -136,7 +136,7 @@ $base-primary: #7859cf;
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
-  text-decoration-line: strikethrough;
+  text-decoration: line-through;
 }
 
 @mixin font-label {
