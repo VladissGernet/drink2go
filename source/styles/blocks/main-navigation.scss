@@ -1,0 +1,17 @@
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.main-navigation__menu-button {
+  background-color: $base-white;
+  border: none;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.main-navigation__menu-button-image {
+  width: 16px;
+  height: 16px;
+}
