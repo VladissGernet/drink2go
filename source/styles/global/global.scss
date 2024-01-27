@@ -23,4 +23,11 @@ img {
   max-width: 100%;
   object-fit: contain;
   display: block;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
