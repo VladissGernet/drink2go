@@ -1,27 +1,33 @@
 .main-navigation {
-  display: flex;
-  align-items: start;
+  display: grid;
+  grid-template-areas:
+    'logo user-navigation menu-button'
+    'site-navigation site-navigation site-navigation';
+  grid-template-columns: 72px 1fr 60px;
 }
 
 .main-navigation__logo {
-  flex-shrink: 0;
   margin: 12px 0;
+  grid-area: logo;
+  justify-self: center;
 }
 
 .main-navigation__site-navigation {
   @include list-reset;
+  grid-area: site-navigation;
 }
 
 .main-navigation__user-navigation {
   @include list-reset;
   margin-left: auto;
+  grid-area: user-navigation;
 }
 
 .main-navigation__menu-button {
+  grid-area: menu-button;
   background-color: $base-white;
   border: none;
   padding: 0;
-  flex-shrink: 0;
   width: 60px;
   height: 60px;
   display: flex;

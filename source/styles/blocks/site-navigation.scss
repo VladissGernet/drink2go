@@ -1,16 +1,27 @@
 .site-navigation {
-  @media (max-width: $mobile-width) {
-    position: absolute;
-    background-color: $base-white;
-    left: 0;
-    width: 100%;
-  }
-
+  background-color: $base-white;
   display: flex;
   flex-direction: column;
 }
 
+.site-navigation__item {
+  box-shadow: inset 0 1px $base-secondary;
+}
+
+.site-navigation__item:last-child {
+  box-shadow: inset 0 1px $base-secondary, inset 0 -1px $base-secondary;
+}
+
 .site-navigation__link {
-  @include font-badge;
+  color: $base-black;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
   text-decoration: none;
+  display: block;
+  padding: 20px;
+  min-height: 57px;
 }
