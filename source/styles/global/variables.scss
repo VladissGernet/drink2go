@@ -4,6 +4,11 @@
 $base-black: #333333;
 $base-primary: #7859cf;
 
+//Resolutions
+$mobile-width: 767px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
 //Fonts
 @mixin general-font {
   font-family: "Montserrat", "Arial", sans-serif;
