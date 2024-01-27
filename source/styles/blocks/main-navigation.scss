@@ -1,6 +1,16 @@
 .main-navigation {
   display: flex;
-  align-items: center;
+  align-items: start;
+}
+
+.main-navigation__logo {
+  flex-shrink: 0;
+  margin: 12px 0;
+}
+
+.main-navigation__user-navigation {
+  @include list-reset;
+  margin-left: auto;
 }
 
 .main-navigation__menu-button {
@@ -9,6 +19,7 @@
   padding: 0;
   width: 60px;
   height: 60px;
+  flex-shrink: 0;
 }
 
 .main-navigation__menu-button-image {

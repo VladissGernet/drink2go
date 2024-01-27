@@ -1,7 +1,7 @@
 .user-navigation {
-  @include list-reset;
   display: flex;
-  margin-left: auto;
+  flex-wrap: wrap;
+  justify-content: end;
 }
 
 .user-navigation-item__link {
