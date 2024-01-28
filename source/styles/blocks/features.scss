@@ -1,8 +1,13 @@
 .features {
   padding-top: 50px;
+  padding-bottom: 60px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0 30px 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 88px;
   }
 }
 
@@ -34,6 +39,11 @@
     margin-top: 60px;
     gap: 18px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 80px;
+  }
 }
 
 .features__item {
@@ -47,6 +57,12 @@
     background-position: top left;
     padding-top: 0;
     padding-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: top center;
+    padding-left: 0;
+    padding-top: 76px;
   }
 }
 
@@ -84,6 +100,7 @@
 
   @media (min-width: $desktop-width) {
     @include font-h3-desktop;
+    text-align: center;
   }
 }
 
@@ -99,6 +116,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include font-description-desktop;
+    text-align: center;
   }
 }
