@@ -1,24 +1,29 @@
 .slider-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .slider-controls__button {
   margin: 0 4px;
-  width: 11px;
-  height: 20px;
   position: relative;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .slider-controls__image {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 48.5%;
+  width: 11px;
+  height: 20px;
 }
 
-.slider-controls__button--next {
+.slider-controls__button--next svg {
   transform: rotate(180deg);
 }
