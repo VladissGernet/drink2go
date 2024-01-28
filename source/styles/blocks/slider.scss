@@ -12,28 +12,68 @@
     'description description'
     'price button';
   grid-template-columns: 1fr 138px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas:
+      'badge badge'
+      'title title'
+      'description description'
+      'price button'
+      'image image';
+    grid-template-columns: 1fr 1fr;
+    gap: 0 6px;
+  }
 }
 
 .slider__title {
   @include font-h1-mobile;
   grid-area: title;
   margin: 4px 0 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-h1-tablet;
+  }
 }
 
 .slider__picture-wrapper {
   grid-area: image;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    justify-self: center;
+    margin-top: 20px;
+  }
+}
+
+.slider__image {
+  @media (min-width: $tablet-width) {
+    width: 476px;
+    height: 476px;
+  }
 }
 
 .slider__badge {
   @include font-badge;
   grid-area: badge;
   margin: 10px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .slider__description {
   @include font-description-mobile;
   grid-area: description;
   margin: 10px 0 0;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    @include font-description-tablet;
+    max-width: 608px;
+    margin: 16px auto 0;
+  }
 }
 
 .slider__old-price {
@@ -43,12 +83,17 @@
 
 .slider__price-wrapper {
   grid-area: price;
-  margin: 23px 0 0 25px;
+  margin: 24px 24px 0 10px;
+  z-index: 1;
+  justify-self: end;
+
+  @media (min-width: $tablet-width) {
+    margin: 24px 20px 0 0;
+  }
 }
 
 .slider__price {
   @include font-price;
-  margin-right: 10px;
 }
 
 .hero__button {
@@ -56,4 +101,5 @@
   justify-self: start;
   align-self: start;
   margin: 20px 0 0;
+  z-index: 1;
 }

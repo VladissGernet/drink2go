@@ -9,21 +9,45 @@
 }
 
 .slider-controls__button {
-  margin: 0 4px;
+  z-index: 1;
+  padding: 0;
+  background-color: tomato;
   position: relative;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  width: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
 }
 
 .slider-controls__image {
   position: absolute;
-  left: 0;
   top: 48.5%;
   width: 11px;
   height: 20px;
+  transform: translate(-50%);
+
+  @media (min-width: $tablet-width) {
+    top: 35%;
+  }
+}
+
+.slider-controls__button--prev svg {
+  left: 10px;
+
+  @media (min-width: $tablet-width) {
+    left: 50%;
+  }
 }
 
 .slider-controls__button--next svg {
-  transform: rotate(180deg);
+  transform: rotate(180deg) translate(50%);
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    left: 50%;
+  }
 }

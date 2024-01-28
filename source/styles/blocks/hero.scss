@@ -3,6 +3,22 @@
   background-color: $flat-white;
   padding-top: 20px;
   padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
+}
+
+.hero::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 248px;
+    bottom: 0;
+    left: 0;
+    background-color: $base-white;
+  }
 }
 
 .hero__slider-controls {
