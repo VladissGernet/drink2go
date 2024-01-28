@@ -1,15 +1,12 @@
 .hero {
-  position: relative;
   background-color: $flat-white;
-  padding-top: 20px;
-  padding-bottom: 60px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 30px;
+    position: initial;
   }
 }
 
@@ -26,6 +23,21 @@
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.hero__container {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 84px;
   }
 }
 

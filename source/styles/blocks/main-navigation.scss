@@ -46,6 +46,7 @@
 .main-navigation__site-navigation {
   @include list-reset;
   grid-area: site-navigation;
+  align-self: self-start
 }
 
 .main-navigation__user-navigation {

@@ -40,7 +40,7 @@
   @include font-h1-mobile;
   grid-area: title;
   margin: 4px 0 0;
-  z-index: 1;
+  text-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     @include font-h1-tablet;
@@ -54,7 +54,7 @@
 
 .slider__picture-wrapper {
   grid-area: image;
-  z-index: 1;
+  justify-self: center;
 
   @media (min-width: $tablet-width) {
     align-self: center;
@@ -102,7 +102,6 @@
   @include font-description-mobile;
   grid-area: description;
   margin: 10px 0 0;
-  z-index: 1;
 
   @media (min-width: $tablet-width) {
     @include font-description-tablet;
@@ -118,16 +117,14 @@
   }
 }
 
-.slider__old-price {
-  @include font-old-price;
-  margin-right: 6px;
-}
-
 .slider__price-wrapper {
   grid-area: price;
   margin: 24px 24px 0 10px;
   z-index: 1;
   justify-self: end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 
   @media (min-width: $tablet-width) {
     margin: 24px 20px 0 0;
@@ -138,16 +135,25 @@
   }
 }
 
-.slider__price {
-  @include font-price;
+.slider__old-price {
+  @include font-old-price;
+  max-width: 40px;
+  display: block;
 }
 
-.hero__button {
+.slider__price {
+  @include font-price;
+  max-width: 50px;
+  display: block;
+}
+
+.slider__button {
   grid-area: button;
   justify-self: start;
   align-self: start;
   margin: 20px 0 0;
   z-index: 1;
+  max-width: 114px;
 
   @media (min-width: $desktop-width) {
     margin-top: 40px;
