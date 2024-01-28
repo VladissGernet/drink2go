@@ -1,5 +1,6 @@
 .site-navigation {
   background-color: $base-white;
+  display: none;
 
   @media (min-width: $tablet-width) {
     display: flex;

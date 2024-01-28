@@ -89,6 +89,50 @@
     </nav>
   </header>
   <main class="main">
+    <h1 class="visually-hidden">Главная страница интернет-магазина кофейных напитков Drink2Go.</h1>
+    <section class="hero container">
+      <h2 class="visually-hidden">Слайдер товаров.</h2>
+      <div class="hero__slider-controls slider-controls">
+        <button class="slider-controls__button slider-controls__button--prev" type="button">
+          <span class="visually-hidden">Предыдущее фото.</span>
+        </button>
+        <button class="slider-controls__button slider-controls__button--next" type="button">
+          <span class="visually-hidden">Следующее фото.</span>
+        </button>
+      </div>
+      <ul class="hero__slider slider">
+        <li class="slider__item">
+          <h3 class="hero__titile">Декаф Флэт Уайт</h3>
+          <picture>
+            <source type="image/webp" media="(min-width: 1140px)"
+              srcset="images/goods/flat_white_desktop@1x.webp 1x, images/goods/flat_white_desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="images/goods/flat_white_tablet@1x.webp 1x, images/goods/flat_white_tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="images/goods/flat_white_mobile@1x.webp 1x, images/goods/flat_white_mobile@2x.webp 2x">
+            <source media="(min-width: 1140px)"
+              srcset="images/goods/flat_white_desktop@1x.png 1x, images/goods/flat_white_desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="images/goods/flat_white_tablet@1x.png 1x, images/goods/flat_white_tablet@2x.png 2x">
+            <img class="promo__image" src="images/goods/flat_white_mobile@1x.png"
+              srcset="images/goods/flat_white_mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт.">
+          </picture>
+          <p class="hero__badge">
+            Новинка!
+          </p>
+          <p class="hero__description">
+            Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления
+            после
+            тяжёлого рабочего дня
+          </p>
+          <p class="hero__price-container">
+            <span class="hero__old-price">295₽</span>
+            <span class="hero__price">225₽</span>
+          </p>
+          <button class="hero__button button" type="button">Заказать</button>
+        </li>
+      </ul>
+    </section>
   </main>
   <footer class="footer">
   </footer>
