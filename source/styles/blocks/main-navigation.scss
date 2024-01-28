@@ -4,12 +4,24 @@
     'logo user-navigation menu-button'
     'site-navigation site-navigation site-navigation';
   grid-template-columns: 72px 1fr 60px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas:
+      'logo site-navigation user-navigation';
+    grid-template-columns: 90px 1fr 120px;
+    gap: 0 60px;
+  }
 }
 
 .main-navigation__logo {
   margin: 12px 0;
   grid-area: logo;
   justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 22px 0;
+    justify-self: start;
+  }
 }
 
 .main-navigation__site-navigation {
@@ -23,7 +35,7 @@
   grid-area: user-navigation;
 }
 
-.main-navigation__menu-button {
+.main-navigation__header-button {
   grid-area: menu-button;
   background-color: $base-white;
   border: none;
@@ -35,7 +47,13 @@
   align-items: center;
 }
 
-.main-navigation__menu-button-image {
+.main-navigation__header-button-image {
   width: 16px;
   height: 16px;
+}
+
+.main-navigation__header-button--menu {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
