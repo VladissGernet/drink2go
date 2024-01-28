@@ -7,9 +7,39 @@
   @media (min-width: $tablet-width) {
     margin-top: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    gap: 10px 22px;
+  }
 }
 
-.user-navigation-item__img {
+.user-navigation__link {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $base-black;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    gap: 8px;
+    padding: 32px 20px;
+  }
+}
+
+.user-navigation__img {
   width: 16px;
   height: 16px;
+}
+
+.user-navigation__label {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }
