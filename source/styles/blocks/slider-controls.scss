@@ -1,0 +1,24 @@
+.slider-controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-controls__button {
+  margin: 0 4px;
+  width: 11px;
+  height: 20px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+}
+
+.slider-controls__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slider-controls__button--next {
+  transform: rotate(180deg);
+}
