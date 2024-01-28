@@ -7,6 +7,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+  }
 }
 
 .hero::before {
@@ -18,6 +22,10 @@
     bottom: 0;
     left: 0;
     background-color: $base-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 

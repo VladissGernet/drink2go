@@ -23,15 +23,32 @@
     grid-template-columns: 1fr 1fr;
     gap: 0 6px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas:
+      'image badge badge'
+      'image title title'
+      'image description description'
+      'image price button';
+    grid-template-rows: repeat(3, auto) 1fr;
+    grid-template-columns: 670px auto 1fr;
+    gap: 0 24px;
+  }
 }
 
 .slider__title {
   @include font-h1-mobile;
   grid-area: title;
   margin: 4px 0 0;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     @include font-h1-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-h1-desktop;
+    text-align: start;
   }
 }
 
@@ -44,6 +61,13 @@
     justify-self: center;
     margin-top: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    align-self: start;
+    justify-self: end;
+    margin-top: 0;
+    margin-right: 6px;
+  }
 }
 
 .slider__image {
@@ -51,15 +75,26 @@
     width: 476px;
     height: 476px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    height: 600px;
+  }
 }
 
 .slider__badge {
   @include font-badge;
   grid-area: badge;
   margin: 10px 0 0;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 150px;
+    text-align: start;
   }
 }
 
@@ -73,6 +108,13 @@
     @include font-description-tablet;
     max-width: 608px;
     margin: 16px auto 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-description-desktop;
+    max-width: 608px;
+    margin: 16px 0 0;
+    text-align: start;
   }
 }
 
@@ -90,6 +132,10 @@
   @media (min-width: $tablet-width) {
     margin: 24px 20px 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 44px 0 0;
+  }
 }
 
 .slider__price {
@@ -102,4 +148,8 @@
   align-self: start;
   margin: 20px 0 0;
   z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+  }
 }
