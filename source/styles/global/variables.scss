@@ -136,6 +136,9 @@ $desktop-width: 1440px;
 
 @mixin font-badge {
   @include general-font;
+  text-align: center;
+  color: $base-primary;
+  text-align: center;
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;

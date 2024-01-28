@@ -1,0 +1,59 @@
+.slider {
+  @include list-reset;
+}
+
+.slider__item {
+  display: grid;
+  align-items: start;
+  grid-template-areas:
+    'image image'
+    'badge badge'
+    'title title'
+    'description description'
+    'price button';
+  grid-template-columns: 1fr 138px;
+}
+
+.slider__title {
+  @include font-h1-mobile;
+  grid-area: title;
+  margin: 4px 0 0;
+}
+
+.slider__picture-wrapper {
+  grid-area: image;
+}
+
+.slider__badge {
+  @include font-badge;
+  grid-area: badge;
+  margin: 10px 0 0;
+}
+
+.slider__description {
+  @include font-description-mobile;
+  grid-area: description;
+  margin: 10px 0 0;
+}
+
+.slider__old-price {
+  @include font-old-price;
+  margin-right: 6px;
+}
+
+.slider__price-wrapper {
+  grid-area: price;
+  margin: 23px 0 0 25px;
+}
+
+.slider__price {
+  @include font-price;
+  margin-right: 10px;
+}
+
+.hero__button {
+  grid-area: button;
+  justify-self: start;
+  align-self: start;
+  margin: 20px 0 0;
+}

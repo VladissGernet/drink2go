@@ -35,8 +35,10 @@
 </head>
 
 <body class="page">
+  <!-- Header -->
   <header class="page__header page-header" data-test="header">
     <nav class="page-header__navigation container main-navigation">
+      <!-- Logo -->
       <a class="main-navigation__logo logo" href="#">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
@@ -45,9 +47,11 @@
             alt="Логотип интернет-магазина кофейных напитков Drink2Go.">
         </picture>
       </a>
+      <!-- Description -->
       <p class="main-navigation__description">
         Интернет-магазин кофейных напитков
       </p>
+      <!-- Site navigation -->
       <ul class="main-navigation__site-navigation site-navigation">
         <li class="site-navigation__item">
           <a class="site-navigation__link site-navigation__link--active" href="#">Главная</a>
@@ -62,6 +66,7 @@
           <a class="site-navigation__link" href="#">О нас</a>
         </li>
       </ul>
+      <!-- User navigation -->
       <ul class="main-navigation__user-navigation user-navigation">
         <li class="user-navigation__item">
           <a class="user-navigation__link main-navigation__header-button" href="#">
@@ -80,6 +85,7 @@
           </a>
         </li>
       </ul>
+      <!-- Menu toggle button -->
       <button class="main-navigation__header-button main-navigation__header-button--menu" type="button">
         <svg class="main-navigation__header-button-image" width="16" height="16">
           <use xlink:href="images/icons/stack.svg#menu-burger"></use>
@@ -90,8 +96,10 @@
   </header>
   <main class="main">
     <h1 class="visually-hidden">Главная страница интернет-магазина кофейных напитков Drink2Go.</h1>
+    <!-- Hero -->
     <section class="hero container" data-test="hero">
       <h2 class="visually-hidden">Слайдер товаров.</h2>
+      <!-- Slider controls -->
       <div class="hero__slider-controls slider-controls">
         <button class="slider-controls__button slider-controls__button--prev slider-button-prev" type="button">
           <svg class="slider-controls__image" width="11" height="20">
@@ -106,34 +114,37 @@
           <span class="visually-hidden">Следующее фото.</span>
         </button>
       </div>
+      <!-- Slider -->
       <ul class="hero__slider slider">
         <li class="slider__item">
-          <h3 class="hero__titile">Декаф Флэт Уайт</h3>
-          <picture>
-            <source type="image/webp" media="(min-width: 1140px)"
-              srcset="images/goods/flat_white_desktop@1x.webp 1x, images/goods/flat_white_desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="images/goods/flat_white_tablet@1x.webp 1x, images/goods/flat_white_tablet@2x.webp 2x">
-            <source type="image/webp"
-              srcset="images/goods/flat_white_mobile@1x.webp 1x, images/goods/flat_white_mobile@2x.webp 2x">
-            <source media="(min-width: 1140px)"
-              srcset="images/goods/flat_white_desktop@1x.png 1x, images/goods/flat_white_desktop@2x.png 2x">
-            <source media="(min-width: 768px)"
-              srcset="images/goods/flat_white_tablet@1x.png 1x, images/goods/flat_white_tablet@2x.png 2x">
-            <img class="promo__image" src="images/goods/flat_white_mobile@1x.png"
-              srcset="images/goods/flat_white_mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт.">
-          </picture>
-          <p class="hero__badge">
+          <h3 class="slider__title">Декаф Флэт Уайт</h3>
+          <div class="slider__picture-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1140px)"
+                srcset="images/goods/flat_white_desktop@1x.webp 1x, images/goods/flat_white_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/goods/flat_white_tablet@1x.webp 1x, images/goods/flat_white_tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="images/goods/flat_white_mobile@1x.webp 1x, images/goods/flat_white_mobile@2x.webp 2x">
+              <source media="(min-width: 1140px)"
+                srcset="images/goods/flat_white_desktop@1x.png 1x, images/goods/flat_white_desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="images/goods/flat_white_tablet@1x.png 1x, images/goods/flat_white_tablet@2x.png 2x">
+              <img class="slider__image" src="images/goods/flat_white_mobile@1x.png"
+                srcset="images/goods/flat_white_mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт.">
+            </picture>
+          </div>
+          <p class="slider__badge">
             Новинка!
           </p>
-          <p class="hero__description">
+          <p class="slider__description">
             Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления
             после
             тяжёлого рабочего дня
           </p>
-          <p class="hero__price-container">
-            <span class="hero__old-price">295₽</span>
-            <span class="hero__price">225₽</span>
+          <p class="slider__price-wrapper">
+            <span class="slider__old-price">295₽</span>
+            <span class="slider__price">225₽</span>
           </p>
           <button class="hero__button button" type="button">Заказать</button>
         </li>
