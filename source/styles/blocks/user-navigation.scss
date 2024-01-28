@@ -2,6 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
+  align-items: start;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+  }
 }
 
 .user-navigation-item__img {
