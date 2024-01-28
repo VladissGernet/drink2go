@@ -31,6 +31,15 @@
   }
 }
 
+.user-navigation__link:hover,
+.user-navigation__link:focus {
+  color: $base-primary;
+}
+
+.user-navigation__link:active {
+  background-color: $base-secondary;
+}
+
 .user-navigation__img {
   width: 16px;
   height: 16px;

@@ -46,6 +46,15 @@
   }
 }
 
+.site-navigation__link:hover,
+.site-navigation__link:focus {
+  color: $base-primary;
+}
+
+.site-navigation__link:active {
+  background-color: $base-secondary;
+}
+
 .site-navigation__link--active {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $base-primary;
