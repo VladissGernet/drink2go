@@ -1,6 +1,10 @@
 .filters-form {
   @media (min-width: $tablet-width) {
     display: grid;
+    grid-template-areas:
+      'price milk country'
+      'buttons buttons buttons';
+    gap: 40px 30px;
   }
 }
 
@@ -8,6 +12,24 @@
   margin: 0 0 31px;
   padding: 0;
   border: none;
+}
+
+.filters-form__fieldset--price {
+  @media (min-width: $tablet-width) {
+    grid-area: price;
+  }
+}
+
+.filters-form__fieldset--milk {
+  @media (min-width: $tablet-width) {
+    grid-area: milk;
+  }
+}
+
+.filters-form__fieldset--country {
+  @media (min-width: $tablet-width) {
+    grid-area: country;
+  }
 }
 
 .filters-form__fieldset--country {
@@ -46,4 +68,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: buttons;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
