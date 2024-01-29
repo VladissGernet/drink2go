@@ -5,11 +5,12 @@
 
 .page-section__title {
   @include font-badge;
+  margin: 0;
 }
 
 .page-section__subtitle {
   @include font-h2-mobile;
-  margin: 4px 0 0;
+  margin: 6px 0 0;
 }
 
 .page-section__filters {

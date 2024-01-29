@@ -1,6 +1,5 @@
 .filter-range {
   position: relative;
-  padding-bottom: 25px;
 }
 
 .filter-range__controls {
@@ -36,8 +35,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 22px;
   position: relative;
+  margin-top: 34px;
 }
 
 .filter-range__input-interval::before {
@@ -53,12 +52,13 @@
 
 .filter-range__input {
   width: 118px;
+  height: 40px;
 }
 
 /* The width and position of the control elements for each filter */
 #filters-form-price-track {
   left: 0;
-  right: 10%;
+  right: 7%;
 }
 
 #filters-form-price-handle-min {
@@ -66,5 +66,5 @@
 }
 
 #filters-form-price-handle-max {
-  right: 10%;
+  right: 7%;
 }

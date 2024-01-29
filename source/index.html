@@ -242,14 +242,8 @@
         <form class="page-section__filters filters-form" action="#" method="GET">
           <h3 class="visually-hidden">Фильтры</h3>
           <fieldset class="filters-form__fieldset">
-            <legend class="filters-form__fieldset-caption">Цена</legend>
+            <legend class="filters-form__fieldset-caption filters-form__fieldset-caption--price">Цена</legend>
             <div class="filter-range">
-              <div class="filter-range__input-interval">
-                <input class="filter-range__input input" type="text" aria-label="Цена от" name="filters-form-price-min"
-                  id="filters-form-price-min" placeholder="0">
-                <input class="filter-range__input input" type="text" aria-label="Цена до" name="filters-form-price-max"
-                  id="filters-form-price-max" value="900" placeholder="900">
-              </div>
               <div class="filter-range__controls">
                 <div class="filter-range__rail">
                   <div class="filter-range__track" id="filters-form-price-track"></div>
@@ -261,10 +255,16 @@
                   <span class="visually-hidden">Установить максимальную стоимость.</span>
                 </button>
               </div>
+              <div class="filter-range__input-interval">
+                <input class="filter-range__input input" type="text" aria-label="Цена от" name="filters-form-price-min"
+                  id="filters-form-price-min" placeholder="0">
+                <input class="filter-range__input input" type="text" aria-label="Цена до" name="filters-form-price-max"
+                  id="filters-form-price-max" value="900" placeholder="900">
+              </div>
             </div>
           </fieldset>
           <fieldset class="filters-form__fieldset">
-            <legend class="filters-form__fieldset-caption">Наличие молока</legend>
+            <legend class="filters-form__fieldset-caption filters-form__fieldset-caption--milk">Наличие молока</legend>
             <label class="filters-form__option radiobutton">
               <input class="radiobutton__control" type="radio" name="milk" value="no-matter" checked>
               <span class="radiobutton__label">Неважно</span>

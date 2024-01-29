@@ -1,5 +1,5 @@
 .filters-form__fieldset {
-  margin: 0;
+  margin: 0 0 32px;
   padding: 0;
   border: none;
 }
@@ -7,5 +7,20 @@
 .filters-form__fieldset-caption {
   @include font-label;
   padding: 0;
+}
+
+.filters-form__fieldset-caption--price {
+  margin-bottom: 30px;
+}
+
+.filters-form__fieldset-caption--milk {
   margin-bottom: 20px;
+}
+
+.filters-form__option {
+  margin-bottom: 20px;
+}
+
+.filters-form__option:last-child {
+  margin-bottom: 0;
 }
