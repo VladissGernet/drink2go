@@ -11,5 +11,9 @@
 }
 
 .input:focus {
-  border-color: $primary-darker;
+  outline-color: $primary-darker;
+}
+
+.input:disabled {
+  border-color: $light-grey;
 }

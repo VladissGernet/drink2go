@@ -40,6 +40,15 @@
 }
 
 .radiobutton__control:disabled+.radiobutton__label {
-  opacity: 0.4;
-  cursor: default;
+  color: $light-grey;
+  cursor: not-allowed;
+}
+
+.radiobutton__control:disabled+.radiobutton__label::before {
+  border-color: $light-grey;
+}
+
+.radiobutton__control:checked:disabled+.radiobutton__label::before {
+  border-color: $light-grey;
+  background-color: $light-grey;
 }

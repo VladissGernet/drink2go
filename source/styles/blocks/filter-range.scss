@@ -19,6 +19,10 @@
   background-color: $primary-lighter;
 }
 
+.filter-range__controls--disabled .filter-range__track {
+  background-color: $base-grey;
+}
+
 .filter-range__handle {
   position: absolute;
   top: 50%;
@@ -29,6 +33,42 @@
   background-color: $base-white;
   border: 2px solid $primary-lighter;
   cursor: pointer;
+  outline: none;
+}
+
+.filter-range__handle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: $base-white;
+  border-radius: 50%;
+}
+
+.filter-range__handle:hover::before,
+.filter-range__handle:focus::before {
+  background-color: rgb($base-primary, 0.25);
+  outline: 2px solid $base-white;
+  outline-offset: -2px;
+}
+
+.filter-range__handle:active::before {
+  background-color: $primary-lighter;
+  outline: 2px solid $base-white;
+  outline-offset: -2px;
+}
+
+.filter-range__controls--disabled .filter-range__handle {
+  border-color: $base-grey;
+  cursor: not-allowed;
+}
+
+.filter-range__controls--disabled .filter-range__handle:hover::before,
+.filter-range__controls--disabled .filter-range__handle:focus::before {
+  background-color: $base-white;
 }
 
 .filter-range__input-interval {
