@@ -1,7 +1,12 @@
 .sorting {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    gap: 10px;
+  }
 }
 
 .sorting__label {

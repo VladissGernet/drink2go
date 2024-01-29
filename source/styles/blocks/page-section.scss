@@ -28,6 +28,10 @@
 .page-section__sorting {
   margin-top: 39px;
   margin-left: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .page-section__navigation {
