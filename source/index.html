@@ -371,8 +371,11 @@
         <!-- Pagination -->
         <ul class="page-section__navigation pagination">
           <li class="pagination__item">
-            <a class="pagination__link" href="#">
+            <a class="pagination__link pagination__link--prev" href="#">
               Назад
+              <svg class="pagination__icon" width="6" height="10">
+                <use xlink:href="images/icons/stack.svg#pagination-arrow-left"></use>
+              </svg>
             </a>
           </li>
           <li class="pagination__item">
@@ -385,7 +388,7 @@
             <a class="pagination__link" href="#">3</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link" href="#">
+            <a class="pagination__link pagination__link--next" href="#">
               Вперёд
             </a>
           </li>
