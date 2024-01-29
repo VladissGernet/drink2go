@@ -10,6 +10,12 @@
   border: none;
 }
 
+.filters-form__fieldset--country {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .filters-form__fieldset-caption {
   @include font-label;
   padding: 0;

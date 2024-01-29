@@ -2,12 +2,15 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-items: start;
+  justify-content: start;
   gap: 10px;
 }
 
 .toggle__control {
   appearance: none;
   position: absolute;
+  cursor: pointer;
 }
 
 .toggle__label {
@@ -21,6 +24,7 @@
   width: 42px;
   height: 24px;
   border-radius: 20px;
+  border: 2px solid $base-grey;
   background-color: $base-grey;
   top: 0;
   bottom: 0;
@@ -36,19 +40,32 @@
   height: 20px;
   background: $base-white;
   border-radius: 50%;
-  left: 1px;
-  top: 2px;
+  left: 0;
+  top: 0;
   transition: transform 0.3s;
 }
 
 .toggle__control:checked+.toggle__slider {
   background-color: $base-primary;
-}
-
-.toggle__control:focus+.toggle__slider {
-  box-shadow: 0 0 4px 2px $base-primary;
+  border-color: $base-primary;
 }
 
 .toggle__control:checked+.toggle__slider::before {
-  transform: translateX(100%);
+  transform: translateX(90%);
+}
+
+.toggle__control:hover+.toggle__slider,
+.toggle__control:focus+.toggle__slider {
+  background-color: rgb($base-primary, 0.25);
+  border-color: $base-primary;
+}
+
+.toggle__control:disabled+.toggle__slider {
+  background-color: $light-grey;
+  border-color: $light-grey;
+  cursor: not-allowed;
+}
+
+.toggle__control:checked:disabled+.toggle__slider::before {
+  background-color: $base-grey;
 }
