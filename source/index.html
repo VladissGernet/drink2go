@@ -241,6 +241,7 @@
         <!-- Form -->
         <form class="page-section__filters filters-form" action="#" method="GET">
           <h3 class="visually-hidden">Фильтры</h3>
+          <!-- Price -->
           <fieldset class="filters-form__fieldset">
             <legend class="filters-form__fieldset-caption filters-form__fieldset-caption--price">Цена</legend>
             <div class="filter-range">
@@ -264,7 +265,8 @@
             </div>
           </fieldset>
           <fieldset class="filters-form__fieldset">
-            <legend class="filters-form__fieldset-caption filters-form__fieldset-caption--milk">Наличие молока</legend>
+            <!-- Milk -->
+            <legend class="filters-form__fieldset-caption">Наличие молока</legend>
             <label class="filters-form__option radiobutton">
               <input class="radiobutton__control" type="radio" name="milk" value="no-matter" checked>
               <span class="radiobutton__label">Неважно</span>
@@ -283,31 +285,32 @@
             </label>
           </fieldset>
           <fieldset class="filters-form__fieldset">
+            <!-- Country -->
             <legend class="filters-form__fieldset-caption">Страна произрастания</legend>
             <label class="filters-form__item toggle">
-              <span class="toggle__label">Бразилия</span>
               <input class="toggle__control" type="checkbox" name="country" value="brazil" checked>
               <span class="toggle__slider"></span>
+              <span class="toggle__label">Бразилия</span>
             </label>
             <label class="filters-form__item toggle">
-              <span class="toggle__label">Эфиопия</span>
               <input class="toggle__control" type="checkbox" name="country" value="ethiopia">
               <span class="toggle__slider"></span>
+              <span class="toggle__label">Эфиопия</span>
             </label>
             <label class="filters-form__item toggle">
-              <span class="toggle__label">Колумбия</span>
               <input class="toggle__control" type="checkbox" name="country" value="colombia">
               <span class="toggle__slider"></span>
+              <span class="toggle__label">Колумбия</span>
             </label>
             <label class="filters-form__item toggle">
-              <span class="toggle__label">Коста-Рика</span>
               <input class="toggle__control" type="checkbox" name="country" value="costa-rica">
               <span class="toggle__slider"></span>
+              <span class="toggle__label">Коста-Рика</span>
             </label>
             <label class="filters-form__item toggle">
-              <span class="toggle__label">Перу</span>
               <input class="toggle__control" type="checkbox" name="country" value="peru" disabled>
               <span class="toggle__slider"></span>
+              <span class="toggle__label">Перу</span>
             </label>
           </fieldset>
           <div class="filters-form__buttons-wrapper">

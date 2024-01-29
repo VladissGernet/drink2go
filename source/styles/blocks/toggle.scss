@@ -1,0 +1,54 @@
+.toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle__control {
+  appearance: none;
+  position: absolute;
+}
+
+.toggle__label {
+  @include font-label;
+  font-weight: 400px;
+}
+
+.toggle__slider {
+  position: relative;
+  cursor: pointer;
+  width: 42px;
+  height: 24px;
+  border-radius: 20px;
+  background-color: $base-grey;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 0;
+  transition: 0.4s;
+}
+
+.toggle__slider::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: $base-white;
+  border-radius: 50%;
+  left: 1px;
+  top: 2px;
+  transition: transform 0.3s;
+}
+
+.toggle__control:checked+.toggle__slider {
+  background-color: $base-primary;
+}
+
+.toggle__control:focus+.toggle__slider {
+  box-shadow: 0 0 4px 2px $base-primary;
+}
+
+.toggle__control:checked+.toggle__slider::before {
+  transform: translateX(100%);
+}
