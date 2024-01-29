@@ -13,6 +13,11 @@
   cursor: pointer;
 }
 
+.button--simple {
+  color: $base-primary;
+  background-color: $base-white;
+}
+
 .button:focus,
 .button:hover {
   background-color: $primary-lighter;
@@ -24,5 +29,22 @@
 
 .button:disabled {
   background-color: $base-grey;
+  cursor: not-allowed;
+}
+
+.button--simple:focus,
+.button--simple:hover {
+  background-color: $base-secondary;
+}
+
+.button--simple:active {
+  background-color: $primary-lighter;
+  color: $base-white;
+}
+
+.button--simple:disabled {
+  background-color: $base-grey;
+  color: $base-white;
+  opacity: 0.6;
   cursor: not-allowed;
 }

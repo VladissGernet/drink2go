@@ -1,0 +1,33 @@
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.sorting__label {
+  @include font-label;
+  display: block;
+}
+
+.sorting__select {
+  @include font-label;
+  color: $base-primary;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 4px 27px 4px 13px;
+  appearance: none;
+  background-image: url('../../images/icons/stack.svg#select-arrow-down');
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-position: right 7px center;
+}
+
+.sorting__select:hover {
+  background-color: $base-secondary;
+}
+
+.sorting__select:focus {
+  background-image: url('../../images/icons/stack.svg#select-arrow-up');
+}

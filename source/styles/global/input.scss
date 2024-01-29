@@ -9,3 +9,7 @@
   border: 2px solid $primary-lighter;
   background-color: $base-white;
 }
+
+.input:focus {
+  border-color: $primary-darker;
+}

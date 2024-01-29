@@ -29,3 +29,9 @@
 .filters-form__item:last-child {
   margin-bottom: 0;
 }
+
+.filters-form__buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

@@ -5,6 +5,10 @@
 @import "./global/util.scss";
 @import "./global/button.scss";
 @import "./global/container.scss";
+@import "./global/input.scss";
+@import "./global/radiobutton.scss";
+@import "./global/toggle.scss";
+@import "./global/sorting.scss";
 
 /* BLOCKS */
 @import "./blocks/page.scss";
@@ -21,6 +25,3 @@
 @import "./blocks/page-section.scss";
 @import "./blocks/filters-form.scss";
 @import "./blocks/filter-range.scss";
-@import "./blocks/input.scss";
-@import "./blocks/radiobutton.scss";
-@import "./blocks/toggle.scss";

@@ -31,7 +31,7 @@
 
 .radiobutton__control:checked+.radiobutton__label::before {
   background-color: $base-primary;
-  border: 2px solid $base-primary;
+  border-color: $base-primary;
   box-shadow: inset 0 0 0 2px $base-white;
 }
 
