@@ -1,6 +1,10 @@
 .page-section {
   padding-top: 50px;
   background-color: $grey-pearl;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+  }
 }
 
 .page-section__title {
@@ -11,6 +15,10 @@
 .page-section__subtitle {
   @include font-h2-mobile;
   margin: 6px 0 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-h2-tablet;
+  }
 }
 
 .page-section__filters {

@@ -232,7 +232,7 @@
       </ul>
     </section>
     <section class="page-section container" data-test="catalog">
-      <div class="page-section__content page-section__content--grid-layout">
+      <div class="page-section__content">
         <!-- Header -->
         <header class="page-section__header">
           <h2 class="page-section__title">Каталог</h2>
@@ -242,8 +242,8 @@
         <form class="page-section__filters filters-form" action="#" method="GET">
           <h3 class="visually-hidden">Фильтры</h3>
           <!-- Price -->
-          <fieldset class="filters-form__fieldset">
-            <legend class="filters-form__fieldset-caption filters-form__fieldset-caption--price">Цена</legend>
+          <fieldset class="filters-form__fieldset filters-form__fieldset--price">
+            <legend class="filters-form__fieldset-caption">Цена</legend>
             <div class="filter-range">
               <div class="filter-range__controls">
                 <div class="filter-range__rail">
@@ -264,8 +264,8 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="filters-form__fieldset">
-            <!-- Milk -->
+          <!-- Milk -->
+          <fieldset class="filters-form__fieldset filters-form__fieldset--milk">
             <legend class="filters-form__fieldset-caption">Наличие молока</legend>
             <label class="filters-form__option radiobutton">
               <input class="radiobutton__control" type="radio" name="milk" value="no-matter" checked>
@@ -284,8 +284,8 @@
               <span class="radiobutton__label">Без молока</span>
             </label>
           </fieldset>
-          <fieldset class="filters-form__fieldset">
-            <!-- Country -->
+          <!-- Country -->
+          <fieldset class="filters-form__fieldset filters-form__fieldset--country">
             <legend class="filters-form__fieldset-caption">Страна произрастания</legend>
             <label class="filters-form__item toggle">
               <input class="toggle__control" type="checkbox" name="country" value="brazil" checked>
@@ -313,6 +313,7 @@
               <span class="toggle__label">Перу</span>
             </label>
           </fieldset>
+          <!-- Form buttons -->
           <div class="filters-form__buttons-wrapper">
             <button class="filters-form__submit button" type="submit">Применить</button>
             <button class="filters-form__reset button button--simple" type="button">Сбросить</button>

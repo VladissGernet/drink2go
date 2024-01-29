@@ -1,3 +1,9 @@
+.filters-form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+}
+
 .filters-form__fieldset {
   margin: 0 0 31px;
   padding: 0;
@@ -10,7 +16,7 @@
   margin-bottom: 20px;
 }
 
-.filters-form__fieldset-caption--price {
+.filters-form__fieldset--price .filters-form__fieldset-caption {
   margin-bottom: 30px;
 }
 
