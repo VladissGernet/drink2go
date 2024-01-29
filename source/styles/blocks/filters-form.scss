@@ -1,0 +1,11 @@
+.filters-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filters-form__fieldset-caption {
+  @include font-label;
+  padding: 0;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,70 @@
+.filter-range {
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.filter-range__controls {
+  position: relative;
+}
+
+.filter-range__rail {
+  height: 2px;
+  background-color: $light-grey;
+}
+
+.filter-range__track {
+  position: absolute;
+  height: 4px;
+  top: -50%;
+  left: 0;
+  background-color: $primary-lighter;
+}
+
+.filter-range__handle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $base-white;
+  border: 2px solid $primary-lighter;
+  cursor: pointer;
+}
+
+.filter-range__input-interval {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 22px;
+  position: relative;
+}
+
+.filter-range__input-interval::before {
+  position: absolute;
+  content: '';
+  top: 20px;
+  left: 50%;
+  width: 8px;
+  height: 2px;
+  transform: translate(-50%, 0);
+  background-color: $base-grey;
+}
+
+.filter-range__input {
+  width: 118px;
+}
+
+/* The width and position of the control elements for each filter */
+#filters-form-price-track {
+  left: 0;
+  right: 10%;
+}
+
+#filters-form-price-handle-min {
+  left: 0;
+}
+
+#filters-form-price-handle-max {
+  right: 10%;
+}

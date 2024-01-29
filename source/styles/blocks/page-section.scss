@@ -1,0 +1,17 @@
+.page-section {
+  padding-top: 50px;
+  background-color: $grey-pearl;
+}
+
+.page-section__title {
+  @include font-badge;
+}
+
+.page-section__subtitle {
+  @include font-h2-mobile;
+  margin: 4px 0 0;
+}
+
+.page-section__filters {
+  margin: 20px 0 0;
+}
