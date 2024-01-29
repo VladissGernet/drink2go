@@ -197,6 +197,7 @@
       </div>
     </section>
     <section class="features container" data-test="features">
+      <!-- Features list -->
       <h2 class="features__title">Преимущества</h2>
       <p class="features__slogan">
         Главные причины выбрать Drink2Go
@@ -229,6 +230,155 @@
           </p>
         </li>
       </ul>
+    </section>
+    <section class="page-section" data-test="catalog">
+      <div class="page-section__content page-section__content--grid-layout">
+        <!-- Header -->
+        <header class="page-section__header">
+          <h2 class="page-section__title">Каталог</h2>
+          <p class="page-section__subtitle">Каталог кофейных напитков</p>
+        </header>
+        <!-- Form -->
+        <form class="page-section__filters filters-form" action="#" method="GET">
+          <h3 class="visually-hidden">Фильтры</h3>
+          <fieldset class="filters-form__fieldset">
+            <legend class="filters-form__fieldset-caption">Цена</legend>
+            <div class="filter-range">
+              <div class="filter-range__input-interval">
+                <input class="filter-range__input input" type="text" aria-label="Цена от" name="filters-form-price-min"
+                  id="filters-form-price-min" value="0" placeholder="0">
+                <input class="filter-range__input input" type="text" aria-label="Цена до" name="filters-form-price-max"
+                  id="filters-form-price-max" value="900" placeholder="900">
+              </div>
+              <div class="filter-range__controls">
+                <div class="filter-range__rail">
+                  <div class="filter-range__track" id="filters-form-price-track"></div>
+                </div>
+                <button class="filter-range__handle" id="filters-form-price-handle-min">
+                  <span class="visually-hidden">Установить минимальную стоимость.</span>
+                </button>
+                <button class="filter-range__handle" id="filters-form-price-handle-max">
+                  <span class="visually-hidden">Установить максимальную стоимость.</span>
+                </button>
+              </div>
+              <span class="filter-range__min-value">0</span>
+              <span class="filter-range__max-value">900</span>
+            </div>
+          </fieldset>
+          <fieldset class="filters-form__fieldset">
+            <legend class="filters-form__fieldset-caption">Наличие молока</legend>
+            <label class="filters-form__option radiobutton">
+              <input class="radiobutton__control" type="radio" name="milk" value="no-matter" checked>
+              <span class="radiobutton__label">Неважно</span>
+            </label>
+            <label class="filters-form__option radiobutton">
+              <input class="radiobutton__control" type="radio" name="milk" value="animal-milk">
+              <span class="radiobutton__label">Только животное</span>
+            </label>
+            <label class="filters-form__option radiobutton">
+              <input class="radiobutton__control" type="radio" name="milk" value="vegetable-milk">
+              <span class="radiobutton__label">Только растительное</span>
+            </label>
+            <label class="filters-form__option radiobutton">
+              <input class="radiobutton__control" type="radio" name="milk" value="milk-free" disabled>
+              <span class="radiobutton__label">Без молока</span>
+            </label>
+          </fieldset>
+          <fieldset class="filters-form__fieldset">
+            <legend class="filters-form__fieldset-caption">Страна произрастания</legend>
+            <label class="filters-form__item toggle">
+              <span class="toggle__label">Бразилия</span>
+              <input class="toggle__control" type="checkbox" name="country" value="brazil" checked>
+              <span class="toggle__slider"></span>
+            </label>
+            <label class="filters-form__item toggle">
+              <span class="toggle__label">Эфиопия</span>
+              <input class="toggle__control" type="checkbox" name="country" value="ethiopia">
+              <span class="toggle__slider"></span>
+            </label>
+            <label class="filters-form__item toggle">
+              <span class="toggle__label">Колумбия</span>
+              <input class="toggle__control" type="checkbox" name="country" value="colombia">
+              <span class="toggle__slider"></span>
+            </label>
+            <label class="filters-form__item toggle">
+              <span class="toggle__label">Коста-Рика</span>
+              <input class="toggle__control" type="checkbox" name="country" value="costa-rica">
+              <span class="toggle__slider"></span>
+            </label>
+            <label class="filters-form__item toggle">
+              <span class="toggle__label">Перу</span>
+              <input class="toggle__control" type="checkbox" name="country" value="peru" disabled>
+              <span class="toggle__slider"></span>
+            </label>
+          </fieldset>
+          <div class="filters-form__buttons-wrapper">
+            <button class="filters-form__submit button" type="submit">Применить</button>
+            <button class="filters-form__reset button button--simple" type="button">Сбросить</button>
+          </div>
+        </form>
+        <!-- Sorting -->
+        <div class="page-section__sorting sorting">
+          <label class="soring__label" for="sorting">Сортировка:</label>
+          <select class="sorting__select" name="sorting" id="sorting">
+            <option value="default">По умолчанию</option>
+          </select>
+        </div>
+        <!-- Catalog -->
+        <ul class="page-section__list catalog">
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <div class="catalog__picture-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)"
+                    srcset="img/promo/promo-image-desktop.webp 1x, img/promo/promo-image-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/promo/promo-image-tablet.webp 1x, img/promo/promo-image-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/promo/promo-image-mobile.webp 1x, img/promo/promo-image-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)"
+                    srcset="img/promo/promo-image-desktop.jpg 1x, img/promo/promo-image-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/promo/promo-image-tablet.jpg 1x, img/promo/promo-image-tablet@2x.jpg 2x">
+                  <img class="promo__image" src="img/promo/promo-image-mobile.jpg"
+                    srcset="img/promo/promo-image-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки.">
+                </picture>
+              </div>
+              <h3 class="catalog__title">Декаф Флэт Уайт</h3>
+              <p class="catalog__description">
+                Кофе без кофеина из&nbsp;Эфиопии
+                с&nbsp;натуральным фермерским молоком
+              </p>
+            </a>
+            <p class="catalog__price">
+              225₽
+            </p>
+            <button class="catalog__button button" type="button">В корзину</button>
+          </li>
+        </ul>
+        <!-- Pagination -->
+        <ul class="page-section__navigation pagination">
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">
+              Назад
+            </a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">
+              Вперёд
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
     <div style="background-color: tomato; height: 300px;">
       CONTENT
