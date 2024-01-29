@@ -93,6 +93,10 @@
 .filter-range__input {
   width: 118px;
   height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 88px;
+  }
 }
 
 /* The width and position of the control elements for each filter */

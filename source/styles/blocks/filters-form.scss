@@ -4,6 +4,7 @@
     grid-template-areas:
       'price milk country'
       'buttons buttons buttons';
+    grid-template-columns: 224px 1fr 1fr;
     gap: 40px 30px;
   }
 }
@@ -12,6 +13,10 @@
   margin: 0 0 31px;
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .filters-form__fieldset--price {
