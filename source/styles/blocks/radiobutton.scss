@@ -1,0 +1,45 @@
+.radiobutton {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+
+.radiobutton__control {
+  appearance: none;
+  position: absolute;
+}
+
+.radiobutton__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+}
+
+.radiobutton__label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border: 2px solid $base-grey;
+  background-color: $base-white;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.radiobutton__control:checked+.radiobutton__label::before {
+  background-color: $base-primary;
+  border: 2px solid $base-primary;
+  box-shadow: inset 0 0 0 2px $base-white;
+}
+
+.radiobutton__control:focus+.radiobutton__label {
+  outline: 1px dotted $base-black;
+}
+
+.radiobutton__control:disabled+.radiobutton__label {
+  opacity: 0.4;
+  cursor: default;
+}
