@@ -42,14 +42,11 @@
   opacity: 0.5;
 }
 
-.pagination__link-img {
-  width: 6px;
-  height: 12px;
-  stroke: #f85a47;
-  fill: none;
+.pagination__icon {
+  width: 10px;
+  height: 10px;
 }
 
-.pagination__link--disabled .pagination__link-img {
-  stroke: #979899;
-  opacity: 0.3;
+.pagination__link--next .pagination__icon {
+  transform: rotate(180deg);
 }
