@@ -1,0 +1,60 @@
+.catalog {
+  @include list-reset;
+  padding-top: 14px;
+}
+
+.catalog__item {
+  background-color: $base-white;
+  padding: 40px 20px 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-areas:
+    'link link'
+    'price button';
+  border-radius: 4px;
+}
+
+.catalog__item:last-child {
+  margin-bottom: 0;
+}
+
+.catalog__link {
+  text-decoration: none;
+  color: $base-black;
+  grid-area: link;
+}
+
+.catalog__picture-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog__title {
+  @include font-h3-mobile;
+  margin: 25px 0 0;
+}
+
+.catalog__description {
+  @include font-description-mobile;
+  text-align: start;
+  margin: 4px 0 0;
+}
+
+.catalog__price {
+  @include font-price;
+  margin: 18px 0 0;
+  grid-area: price;
+}
+
+.catalog__button {
+  grid-area: button;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 16px 0 0;
+  background-image: url('../../images/icons/stack.svg#cart-plus');
+  background-repeat: no-repeat;
+  background-size: 20px 16px;
+  background-position: 20px center;
+  padding: 8px 20px 8px 46px;
+  justify-self: end;
+}
