@@ -1,8 +1,22 @@
 .footer {
-  padding-top: 22px;
+  @media (max-width: $mobile-width) {
+    padding-top: 22px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    display: grid;
+    grid-template-areas:
+      "top navigation"
+      "copyright copyright";
+    grid-template-columns: 318px 1fr;
+    gap: 30px;
   }
 }
 
@@ -11,6 +25,31 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    max-width: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0;
+    justify-content: start;
+    flex-direction: column;
+    grid-area: top;
+  }
+}
+
+.footer__logo-description {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    @include font-description-mobile;
+    display: block;
+    text-align: start;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__logo-image {
@@ -28,6 +67,19 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 26px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: navigation;
+    margin: 0;
+    max-width: unset;
+  }
+}
+
+.footer__social {
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
   }
 }
 
@@ -37,5 +89,12 @@
   @media (min-width: $tablet-width) {
     margin-top: 36px;
     margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    max-width: unset;
+    grid-area: copyright;
   }
 }
