@@ -10,14 +10,23 @@
   text-decoration: none;
 }
 
-.copyright__logo-wrapper {
+.copyright__logo {
+  width: 12px;
+  height: 16px;
+  display: inline;
+}
+
+.copyright__text--link {
   display: inline-flex;
   align-items: center;
   gap: 4px;
 }
 
-.copyright__logo {
-  width: 12px;
-  height: 16px;
-  display: inline;
+.copyright__text--link:hover,
+.copyright__text--link:focus {
+  color: $base-primary;
+}
+
+.copyright__text--link:active {
+  color: $primary-darker;
 }
