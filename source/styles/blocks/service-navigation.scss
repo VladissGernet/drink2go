@@ -8,6 +8,11 @@
     justify-content: center;
     gap: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    gap: 28px;
+  }
 }
 
 .service-navigation__column {
@@ -19,6 +24,11 @@
     box-shadow: none;
     padding: 0;
     min-width: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    min-width: 318px;
   }
 }
 
@@ -72,6 +82,10 @@
 
   @media (min-width: $tablet-width) {
     max-width: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 298px;
   }
 }
 

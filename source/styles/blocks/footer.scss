@@ -16,7 +16,7 @@
       "top navigation"
       "copyright copyright";
     grid-template-columns: 318px 1fr;
-    gap: 30px;
+    gap: 26px 30px;
   }
 }
 
@@ -72,7 +72,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: navigation;
-    margin: 0;
+    margin: 8px 0 0;
     max-width: unset;
   }
 }
