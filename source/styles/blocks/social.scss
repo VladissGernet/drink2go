@@ -1,0 +1,13 @@
+.social {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+// .social__item {
+// }
+// .social__link {
+// }
+// .social__icon {
+// }

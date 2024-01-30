@@ -1,0 +1,61 @@
+// .service-navigation {
+//   @include list-reset;
+// }
+
+.service-navigation__column {
+  box-shadow: 0 -1px $base-secondary;
+  padding: 20px 0 30px;
+}
+
+.service-navigation__column:last-child {
+  box-shadow: 0 -1px $base-secondary, 0 1px $base-secondary;
+  padding-bottom: 20px;
+}
+
+.service-navigation__category {
+  @include font-h4;
+  margin: 0;
+}
+
+.service-navigation__list {
+  @include list-reset;
+  margin-top: 18px;
+}
+
+.service-navigation__item {
+  margin-bottom: 16px;
+}
+
+.service-navigation__item:last-child {
+  margin-bottom: 0;
+}
+
+.service-navigation__link {
+  color: $base-black;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.service-navigation__address,
+.service-navigation__link--phone {
+  @include font-description-mobile;
+  text-align: start;
+  padding-left: 20px;
+  background-image: url("../../images/icons/stack.svg#address-pin");
+  background-size: 13px 16px;
+  background-repeat: no-repeat;
+  background-position: 0 3px;
+}
+
+.service-navigation__address {
+  margin-top: 20px;
+}
+
+.service-navigation__link--phone {
+  background-image: url("../../images/icons/stack.svg#phone");
+  letter-spacing: 0.01px;
+}

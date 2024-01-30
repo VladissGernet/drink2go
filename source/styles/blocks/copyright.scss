@@ -1,0 +1,23 @@
+.copyright {
+  text-align: center;
+}
+
+.copyright__text {
+  color: $base-grey;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.copyright__logo-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.copyright__logo {
+  width: 12px;
+  height: 16px;
+  display: inline;
+}

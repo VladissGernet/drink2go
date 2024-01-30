@@ -1,0 +1,23 @@
+.footer {
+  padding-top: 22px;
+}
+
+.footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer__logo-image {
+  width: 82px;
+  height: 36px;
+}
+
+.footer__navigation {
+  margin-top: 16px;
+}
+
+.footer__copyright {
+  margin: 20px 0 30px;
+}
