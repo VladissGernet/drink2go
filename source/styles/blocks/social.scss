@@ -4,3 +4,22 @@
   flex-wrap: wrap;
   gap: 20px;
 }
+
+.social__link {
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  color: $base-grey;
+}
+
+.social__link:hover,
+.social__link:focus {
+  outline: none;
+  background-color: $base-secondary;
+  color: $base-primary;
+}
+
+.social__link:active {
+  background-color: rgb($base-primary, 0.25);
+}
