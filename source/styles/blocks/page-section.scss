@@ -1,13 +1,16 @@
 .page-section {
   padding-top: 50px;
   background-color: $grey-pearl;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     padding-top: 80px;
+    padding-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 98px;
+    padding-bottom: 120px;
   }
 }
 
