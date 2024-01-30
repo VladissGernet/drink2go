@@ -49,3 +49,18 @@
     background-color: $base-primary;
   }
 }
+
+.slider-pagination__button:not(
+    .slider-pagination__button--active
+  ):hover::before,
+.slider-pagination__button:not(
+    .slider-pagination__button--active
+  ):focus::before {
+  background-color: rgb($base-primary, 0.25);
+}
+
+.slider-pagination__button:not(
+    .slider-pagination__button--active
+  ):active::before {
+  background-color: $base-primary;
+}
