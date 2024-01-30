@@ -79,6 +79,10 @@
 }
 
 .footer__social {
+  @media (min-width: $tablet-width) {
+    max-width: 340px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: 50px;
   }
