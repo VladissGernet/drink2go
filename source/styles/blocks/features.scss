@@ -68,25 +68,23 @@
 
 .features__item:last-child {
   margin-bottom: 0;
-  ;
 }
 
 .features__item--speed {
-  background-image: url('../../images/icons/stack.svg#speed');
+  background-image: url("../../images/icons/stack.svg#speed");
 }
 
 .features__item--convenience {
-  background-image: url('../../images/icons/stack.svg#convenience');
+  background-image: url("../../images/icons/stack.svg#convenience");
 }
 
 .features__item--cheerfulness {
-  background-image: url('../../images/icons/stack.svg#cheerfulness');
+  background-image: url("../../images/icons/stack.svg#cheerfulness");
 }
 
 .features__item--eco {
-  background-image: url('../../images/icons/stack.svg#eco');
+  background-image: url("../../images/icons/stack.svg#eco");
 }
-
 
 .features__item-title {
   @include font-h3-mobile;

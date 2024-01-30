@@ -31,10 +31,10 @@
 
   @media (min-width: $desktop-width) {
     grid-template-areas:
-      'image badge badge'
-      'image title title'
-      'image description description'
-      'image price button';
+      "image badge badge"
+      "image title title"
+      "image description description"
+      "image price button";
     grid-template-rows: repeat(3, auto) 1fr;
     grid-template-columns: 670px auto 1fr;
     gap: 0 24px;

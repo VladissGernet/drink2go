@@ -15,10 +15,10 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-areas:
-      'header header'
-      'filters sorting'
-      'filters catalog'
-      'filters pagination';
+      "header header"
+      "filters sorting"
+      "filters catalog"
+      "filters pagination";
     grid-template-columns: 318px 1fr;
     gap: 20px 30px;
   }

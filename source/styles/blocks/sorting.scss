@@ -26,7 +26,7 @@
   border-radius: 4px;
   padding: 4px 27px 4px 13px;
   appearance: none;
-  background-image: url('../../images/icons/stack.svg#select-arrow-down');
+  background-image: url("../../images/icons/stack.svg#select-arrow-down");
   background-repeat: no-repeat;
   background-size: 11px;
   background-position: right 7px center;
@@ -38,5 +38,5 @@
 }
 
 .sorting__select:focus {
-  background-image: url('../../images/icons/stack.svg#select-arrow-up');
+  background-image: url("../../images/icons/stack.svg#select-arrow-up");
 }

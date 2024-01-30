@@ -50,27 +50,27 @@
   transition: transform 0.3s;
 }
 
-.toggle__control:checked+.toggle__slider {
+.toggle__control:checked + .toggle__slider {
   background-color: $base-primary;
   border-color: $base-primary;
 }
 
-.toggle__control:checked+.toggle__slider::before {
+.toggle__control:checked + .toggle__slider::before {
   transform: translateX(90%);
 }
 
-.toggle__control:hover+.toggle__slider,
-.toggle__control:focus+.toggle__slider {
+.toggle__control:hover + .toggle__slider,
+.toggle__control:focus + .toggle__slider {
   background-color: rgb($base-primary, 0.25);
   border-color: $base-primary;
 }
 
-.toggle__control:disabled+.toggle__slider {
+.toggle__control:disabled + .toggle__slider {
   background-color: $light-grey;
   border-color: $light-grey;
   cursor: not-allowed;
 }
 
-.toggle__control:checked:disabled+.toggle__slider::before {
+.toggle__control:checked:disabled + .toggle__slider::before {
   background-color: $base-grey;
 }

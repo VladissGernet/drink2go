@@ -1,18 +1,18 @@
 .main-navigation {
   display: grid;
   grid-template-areas:
-    'logo user-navigation menu-button'
-    'site-navigation site-navigation site-navigation';
+    "logo user-navigation menu-button"
+    "site-navigation site-navigation site-navigation";
   grid-template-columns: 72px 1fr 60px;
 
   @media (min-width: $tablet-width) {
-    grid-template-areas: 'logo site-navigation user-navigation';
+    grid-template-areas: "logo site-navigation user-navigation";
     grid-template-columns: 90px 1fr 120px;
     gap: 0 10px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-areas: 'logo description site-navigation user-navigation';
+    grid-template-areas: "logo description site-navigation user-navigation";
     grid-template-columns: 170px 166px 1fr 280px;
     gap: 0;
   }
@@ -46,7 +46,7 @@
 .main-navigation__site-navigation {
   @include list-reset;
   grid-area: site-navigation;
-  align-self: self-start
+  align-self: self-start;
 }
 
 .main-navigation__user-navigation {

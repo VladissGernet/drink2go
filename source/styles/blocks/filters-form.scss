@@ -2,8 +2,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-areas:
-      'price milk country'
-      'buttons buttons buttons';
+      "price milk country"
+      "buttons buttons buttons";
     grid-template-columns: 224px 1fr 1fr;
     gap: 40px 30px;
   }

@@ -36,26 +36,26 @@
   box-sizing: border-box;
 }
 
-.radiobutton__control:checked+.radiobutton__label::before {
+.radiobutton__control:checked + .radiobutton__label::before {
   background-color: $base-primary;
   border-color: $base-primary;
   box-shadow: inset 0 0 0 2px $base-white;
 }
 
-.radiobutton__control:focus+.radiobutton__label {
+.radiobutton__control:focus + .radiobutton__label {
   outline: 1px dotted $base-black;
 }
 
-.radiobutton__control:disabled+.radiobutton__label {
+.radiobutton__control:disabled + .radiobutton__label {
   color: $light-grey;
   cursor: not-allowed;
 }
 
-.radiobutton__control:disabled+.radiobutton__label::before {
+.radiobutton__control:disabled + .radiobutton__label::before {
   border-color: $light-grey;
 }
 
-.radiobutton__control:checked:disabled+.radiobutton__label::before {
+.radiobutton__control:checked:disabled + .radiobutton__label::before {
   border-color: $light-grey;
   background-color: $light-grey;
 }
