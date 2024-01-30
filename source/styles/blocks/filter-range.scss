@@ -97,6 +97,10 @@
   @media (min-width: $tablet-width) {
     width: 88px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 134px;
+  }
 }
 
 /* The width and position of the control elements for each filter */

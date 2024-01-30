@@ -33,11 +33,19 @@
   @media (min-width: $tablet-width) {
     grid-area: milk;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+  }
 }
 
 .filters-form__fieldset--country {
   @media (min-width: $tablet-width) {
     grid-area: country;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
   }
 }
 
@@ -82,5 +90,16 @@
     grid-area: buttons;
     flex-direction: row;
     justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+    justify-content: start;
+  }
+}
+
+.filters-form__button {
+  @media (min-width: $desktop-width) {
+    min-width: 150px;
   }
 }
