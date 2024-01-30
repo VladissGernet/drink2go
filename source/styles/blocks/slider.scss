@@ -11,20 +11,20 @@
   display: grid;
   align-items: start;
   grid-template-areas:
-    'image image'
-    'badge badge'
-    'title title'
-    'description description'
-    'price button';
+    "image image"
+    "badge badge"
+    "title title"
+    "description description"
+    "price button";
   grid-template-columns: 1fr 138px;
 
   @media (min-width: $tablet-width) {
     grid-template-areas:
-      'badge badge'
-      'title title'
-      'description description'
-      'price button'
-      'image image';
+      "badge badge"
+      "title title"
+      "description description"
+      "price button"
+      "image image";
     grid-template-columns: 1fr 1fr;
     gap: 0 6px;
   }

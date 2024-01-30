@@ -10,10 +10,17 @@
 }
 
 .radiobutton__label {
+  @include font-label;
+  font-weight: 400;
   display: inline-flex;
   align-items: center;
   gap: 10px;
   user-select: none;
+  word-break: break-all;
+
+  @media (min-width: $tablet-width) {
+    max-width: 222px;
+  }
 }
 
 .radiobutton__label::before {

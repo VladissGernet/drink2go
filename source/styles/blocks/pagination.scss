@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 20px;
   list-style: none;
   margin: 0;
@@ -21,11 +21,12 @@
   align-items: center;
   justify-content: center;
   min-width: 40px;
-  height: 40px;
+  min-height: 40px;
   text-decoration: none;
   background-color: $base-white;
   border-radius: 4px;
   padding: 8px;
+  overflow: hidden;
 }
 
 .pagination__link--prev,

@@ -4,7 +4,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    ;
     gap: 30px;
   }
 
@@ -19,8 +18,8 @@
   margin-bottom: 20px;
   display: grid;
   grid-template-areas:
-    'link link'
-    'price button';
+    "link link"
+    "price button";
   border-radius: 4px;
 
   @media (min-width: $tablet-width) {
@@ -53,6 +52,7 @@
 .catalog__title {
   @include font-h3-mobile;
   margin: 25px 0 0;
+  max-width: 240px;
 
   @media (min-width: $tablet-width) {
     @include font-h3-tablet;
@@ -64,9 +64,11 @@
   @include font-description-mobile;
   text-align: start;
   margin: 4px 0 0;
+  max-width: 240px;
 
   @media (min-width: $tablet-width) {
     margin-top: 10px;
+    max-width: 290px;
   }
 }
 
@@ -74,6 +76,7 @@
   @include font-price;
   margin: 18px 0 0;
   grid-area: price;
+  max-width: 50px;
 
   @media (min-width: $tablet-width) {
     margin-top: 20px;
@@ -85,12 +88,14 @@
   font-size: 14px;
   line-height: 20px;
   margin: 16px 0 0;
-  background-image: url('../../images/icons/stack.svg#cart-plus');
+  background-image: url("../../images/icons/stack.svg#cart-plus");
   background-repeat: no-repeat;
   background-size: 20px 16px;
   background-position: 20px center;
   padding: 8px 20px 8px 46px;
   justify-self: end;
+  max-width: 142px;
+  align-self: start;
 
   @media (min-width: $tablet-width) {
     margin-top: 20px;

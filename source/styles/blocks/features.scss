@@ -96,11 +96,13 @@
   @media (min-width: $tablet-width) {
     @include font-h3-tablet;
     text-align: left;
+    max-width: 268px;
   }
 
   @media (min-width: $desktop-width) {
     @include font-h3-desktop;
     text-align: center;
+    max-width: unset;
   }
 }
 
