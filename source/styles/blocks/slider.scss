@@ -41,6 +41,10 @@
   }
 }
 
+.slider__item--hidden {
+  display: none;
+}
+
 .slider__title {
   @include font-h1-mobile;
   grid-area: title;
