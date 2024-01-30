@@ -70,6 +70,15 @@
   text-decoration: none;
 }
 
+.service-navigation__link:hover,
+.service-navigation__link:focus {
+  color: $primary-lighter;
+}
+
+.service-navigation__link:active {
+  color: $primary-darker;
+}
+
 .service-navigation__address,
 .service-navigation__link--phone {
   @include font-description-mobile;
