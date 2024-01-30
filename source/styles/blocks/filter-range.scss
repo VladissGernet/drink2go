@@ -63,7 +63,7 @@
 
 .filter-range__controls--disabled .filter-range__handle {
   border-color: $base-grey;
-  cursor: not-allowed;
+  cursor: default;
 }
 
 .filter-range__controls--disabled .filter-range__handle:hover::before,

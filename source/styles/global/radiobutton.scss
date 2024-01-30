@@ -48,7 +48,7 @@
 
 .radiobutton__control:disabled + .radiobutton__label {
   color: $light-grey;
-  cursor: not-allowed;
+  cursor: default;
 }
 
 .radiobutton__control:disabled + .radiobutton__label::before {

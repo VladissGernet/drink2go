@@ -30,7 +30,7 @@
 
 .button:disabled {
   background-color: $base-grey;
-  cursor: not-allowed;
+  cursor: default;
 }
 
 .button--simple:focus,
@@ -47,5 +47,5 @@
   background-color: $base-grey;
   color: $base-white;
   opacity: 0.6;
-  cursor: not-allowed;
+  cursor: default;
 }

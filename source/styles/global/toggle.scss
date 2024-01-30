@@ -68,7 +68,7 @@
 .toggle__control:disabled + .toggle__slider {
   background-color: $light-grey;
   border-color: $light-grey;
-  cursor: not-allowed;
+  cursor: default;
 }
 
 .toggle__control:checked:disabled + .toggle__slider::before {
