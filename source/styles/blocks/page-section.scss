@@ -36,4 +36,8 @@
 
 .page-section__navigation {
   margin-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 68px;
+  }
 }

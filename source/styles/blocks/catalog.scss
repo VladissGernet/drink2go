@@ -21,7 +21,8 @@
   border-radius: 4px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 30px 20px;
+    padding: 50px 30px 30px;
+    margin: 0;
   }
 }
 
@@ -64,6 +65,10 @@
   @include font-price;
   margin: 18px 0 0;
   grid-area: price;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .catalog__button {
@@ -77,4 +82,8 @@
   background-position: 20px center;
   padding: 8px 20px 8px 46px;
   justify-self: end;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }

@@ -1,30 +1,41 @@
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0 0 40px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
 }
 
 .pagination__link {
   @include font-label;
-  font-weight: 400px;
+  font-weight: 400;
   color: $base-primary;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   text-decoration: none;
   background-color: $base-white;
   border-radius: 4px;
+  padding: 8px;
 }
 
 .pagination__link--prev,
 .pagination__link--next {
   font-size: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
 }
 
 .pagination__link--active {
@@ -45,6 +56,10 @@
 .pagination__icon {
   width: 10px;
   height: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .pagination__link--next .pagination__icon {
