@@ -7,6 +7,10 @@
     grid-template-columns: 224px 1fr 1fr;
     gap: 40px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .filters-form__fieldset {
