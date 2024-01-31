@@ -42,9 +42,9 @@ const onNextButtonClick = () => {
     updatedSliderList[newSliderIndex].classList.remove('slider__item--hidden');
     sliderPaginationItems.forEach((item) => item.classList.remove('slider-pagination__button--active'));
     sliderPaginationItems[newSliderIndex].classList.add('slider-pagination__button--active');
-    isLastSlideShown();
+    isFirstSlideShown();
   }
-  isFirstSlideShown();
+  isLastSlideShown();
 };
 sliderNextButton.addEventListener('click', onNextButtonClick);
 
