@@ -18,7 +18,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  width: 20px;
+  width: 40px;
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -29,7 +29,7 @@
   display: block;
   width: 11px;
   height: 20px;
-  transform: translate(-10%, 0);
+  transform: translate(-100%, 0);
 
   @media (min-width: $tablet-width) {
     transform: none;
