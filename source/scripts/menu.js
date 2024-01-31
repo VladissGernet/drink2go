@@ -12,13 +12,14 @@ const initMenu = () => {
     const isOutsideListClick = evt.target.closest('.site-navigation') === null;
     const isNotButtonClick = evt.target.closest('.js-toggle-button') === null;
     if (isOutsideListClick && isNotButtonClick) {
+      document.removeEventListener('click', checkOutsideClick);
       hideMenu();
     }
   };
   menuButton.addEventListener('click', () => {
     const isMenuOpened = menuButton.classList.contains('opened');
-    document.addEventListener('click', checkOutsideClick);
     if (isMenuOpened === false) {
+      document.addEventListener('click', checkOutsideClick);
       siteNavigation.style.display = 'block';
       menuButtonIcon.setAttribute('href', menuIcon.crosshair);
       menuButton.classList.add('opened');
