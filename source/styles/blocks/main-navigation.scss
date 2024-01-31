@@ -5,6 +5,10 @@
     "site-navigation site-navigation site-navigation";
   grid-template-columns: 72px 1fr 60px;
 
+  @media (max-width: $mobile-width) {
+    position: relative;
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-areas: "logo site-navigation user-navigation";
     grid-template-columns: 90px 1fr 120px;
@@ -47,6 +51,12 @@
   @include list-reset;
   grid-area: site-navigation;
   align-self: self-start;
+
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
 }
 
 .main-navigation__user-navigation {
