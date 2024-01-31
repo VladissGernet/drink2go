@@ -104,15 +104,62 @@
 }
 
 /* The width and position of the control elements for each filter */
-#filters-form-price-track {
+.filter-range__track--initial {
   left: 0;
   right: 7%;
 }
 
-#filters-form-price-handle-min {
+.filter-range__handle--initial-min {
   left: 0;
 }
 
-#filters-form-price-handle-max {
+.filter-range__handle--initial-max {
   right: 7%;
+}
+
+#range__control {
+  padding: 0 16px 0 6px;
+  box-shadow: none;
+  height: 1px;
+  border-radius: 0;
+  border: 1px solid $light-grey;
+}
+
+#range__control .noUi-connects {
+  height: 2px;
+  overflow: visible;
+}
+
+#range__control .noUi-connect {
+  box-shadow: 0 -2px $primary-lighter;
+  background-color: $primary-lighter;
+}
+
+#range__control .noUi-handle {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $base-white;
+  border: 2px solid $primary-lighter;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+#range__control .noUi-handle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: $base-white;
+  border-radius: 50%;
+}
+
+#range__control .noUi-handle::after {
+  display: none;
 }

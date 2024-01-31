@@ -31,6 +31,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <script src="vendor/noui-slider/nouislider.js" defer></script>
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -278,20 +279,20 @@
           <fieldset class="filters-form__fieldset filters-form__fieldset--price">
             <legend class="filters-form__fieldset-caption">Цена</legend>
             <div class="filter-range">
-              <div class="filter-range__controls">
+              <div class="filter-range__controls" id="range__control">
                 <div class="filter-range__rail">
-                  <div class="filter-range__track" id="filters-form-price-track"></div>
+                  <div class="filter-range__track filter-range__track--initial"></div>
                 </div>
-                <button class="filter-range__handle" id="filters-form-price-handle-min" type="button">
+                <button class="filter-range__handle filter-range__handle--initial-min" type="button">
                   <span class="visually-hidden">Установить минимальную стоимость.</span>
                 </button>
-                <button class="filter-range__handle" id="filters-form-price-handle-max" type="button">
+                <button class="filter-range__handle filter-range__handle--initial-max" type="button">
                   <span class="visually-hidden">Установить максимальную стоимость.</span>
                 </button>
               </div>
               <div class="filter-range__input-interval">
-                <input class="filter-range__input input" type="text" aria-label="Цена от" name="filters-form-price-min"
-                  id="filters-form-price-min" placeholder="0">
+                <input class="filter-range__input input js-filters-form-price-min" type="text" aria-label="Цена от"
+                  name="filters-form-price-min" id="filters-form-price-min" placeholder="0">
                 <input class="filter-range__input input" type="text" aria-label="Цена до" name="filters-form-price-max"
                   id="filters-form-price-max" value="900" placeholder="900">
               </div>
