@@ -6,6 +6,7 @@ const heroBlock = document.querySelector('.hero');
 const sliderList = heroBlock.querySelector('.slider');
 const sliderItems = sliderList.querySelectorAll('.slider__item');
 const sliderPagination = heroBlock.querySelector('.slider-pagination');
+const sliderPaginationItems = sliderPagination.querySelectorAll('.slider-pagination__button');
 const sliderPrevButton = heroBlock.querySelector('.slider-button-prev');
 const sliderNextButton = heroBlock.querySelector('.slider-button-next');
 
@@ -36,8 +37,11 @@ const onNextButtonClick = () => {
   });
   const isNotLastSlideIndex = currentSliderIndex + 1 > updatedSliderList.length - 1 === false;
   if (isNotLastSlideIndex) {
+    const newSliderIndex = currentSliderIndex + 1;
     updatedSliderList[currentSliderIndex].classList.add('slider__item--hidden');
-    updatedSliderList[currentSliderIndex + 1].classList.remove('slider__item--hidden');
+    updatedSliderList[newSliderIndex].classList.remove('slider__item--hidden');
+    sliderPaginationItems.forEach((item) => item.classList.remove('slider-pagination__button--active'));
+    sliderPaginationItems[newSliderIndex].classList.add('slider-pagination__button--active');
     isLastSlideShown();
   }
   isFirstSlideShown();
@@ -54,8 +58,11 @@ const onPrevButtonClick = () => {
   });
   const isNotFirstSlideIndex = currentSliderIndex > 0;
   if (isNotFirstSlideIndex) {
+    const newSliderIndex = currentSliderIndex - 1;
     updatedSliderList[currentSliderIndex].classList.add('slider__item--hidden');
-    updatedSliderList[currentSliderIndex - 1].classList.remove('slider__item--hidden');
+    updatedSliderList[newSliderIndex].classList.remove('slider__item--hidden');
+    sliderPaginationItems.forEach((item) => item.classList.remove('slider-pagination__button--active'));
+    sliderPaginationItems[newSliderIndex].classList.add('slider-pagination__button--active');
     isLastSlideShown();
   }
   isFirstSlideShown();
