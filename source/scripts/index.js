@@ -79,8 +79,8 @@ const onPaginationClick = (evt) => {
     const activeButton = sliderPagination.querySelector('.slider-pagination__button--active');
     activeButton.classList.remove('slider-pagination__button--active');
     selectedPaginationButton.classList.add('slider-pagination__button--active');
-    const sliderPaginationItems = sliderPagination.querySelectorAll('.slider-pagination__button');
-    const activeButtonIndex = Array.from(sliderPaginationItems).findIndex((item) => item.classList.contains('slider-pagination__button--active'));
+    const newSliderPaginationItems = sliderPagination.querySelectorAll('.slider-pagination__button');
+    const activeButtonIndex = Array.from(newSliderPaginationItems).findIndex((item) => item.classList.contains('slider-pagination__button--active'));
     sliderItems.forEach((item) => item.classList.add('slider__item--hidden'));
     sliderItems[activeButtonIndex].classList.remove('slider__item--hidden');
     isFirstSlideShown();
