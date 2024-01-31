@@ -5,7 +5,9 @@ initMenu();
 initSlider();
 
 const priceSlider = document.querySelector('.filter-range__controls');
-priceSlider.innerHTML = '';
+const priceSliderStaticWrapper = priceSlider.querySelector('.filter-range__static-range-wrapper');
+priceSliderStaticWrapper.style.display = 'none';
+priceSlider.id = 'js-range-control';
 noUiSlider.create(priceSlider, {
   start: [0, 920],
   step: 5,
@@ -19,3 +21,5 @@ noUiSlider.create(priceSlider, {
 priceSlider.noUiSlider.on('update', () => {
   console.log(priceSlider.noUiSlider.get());
 });
+
+priceSlider.noUiSlider.set([150, 100]);

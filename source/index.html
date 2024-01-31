@@ -279,16 +279,18 @@
           <fieldset class="filters-form__fieldset filters-form__fieldset--price">
             <legend class="filters-form__fieldset-caption">Цена</legend>
             <div class="filter-range">
-              <div class="filter-range__controls" id="range__control">
-                <div class="filter-range__rail">
-                  <div class="filter-range__track filter-range__track--initial"></div>
+              <div class="filter-range__controls filter-range__controls--disabled">
+                <div class="filter-range__static-range-wrapper">
+                  <div class="filter-range__rail">
+                    <div class="filter-range__track filter-range__track--initial"></div>
+                  </div>
+                  <button class="filter-range__handle filter-range__handle--initial-min" type="button">
+                    <span class="visually-hidden">Установить минимальную стоимость.</span>
+                  </button>
+                  <button class="filter-range__handle filter-range__handle--initial-max" type="button">
+                    <span class="visually-hidden">Установить максимальную стоимость.</span>
+                  </button>
                 </div>
-                <button class="filter-range__handle filter-range__handle--initial-min" type="button">
-                  <span class="visually-hidden">Установить минимальную стоимость.</span>
-                </button>
-                <button class="filter-range__handle filter-range__handle--initial-max" type="button">
-                  <span class="visually-hidden">Установить максимальную стоимость.</span>
-                </button>
               </div>
               <div class="filter-range__input-interval">
                 <input class="filter-range__input input js-filters-form-price-min" type="text" aria-label="Цена от"

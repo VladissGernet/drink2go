@@ -117,7 +117,7 @@
   right: 7%;
 }
 
-#range__control {
+#js-range-control {
   padding: 0 16px 0 6px;
   box-shadow: none;
   height: 1px;
@@ -125,17 +125,17 @@
   border: 1px solid $light-grey;
 }
 
-#range__control .noUi-connects {
+#js-range-control .noUi-connects {
   height: 2px;
   overflow: visible;
 }
 
-#range__control .noUi-connect {
+#js-range-control .noUi-connect {
   box-shadow: 0 -2px $primary-lighter;
   background-color: $primary-lighter;
 }
 
-#range__control .noUi-handle {
+#js-range-control .noUi-handle {
   top: 50%;
   transform: translateY(-50%);
   width: 24px;
@@ -148,7 +148,7 @@
   box-shadow: none;
 }
 
-#range__control .noUi-handle::before {
+#js-range-control .noUi-handle::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -160,6 +160,19 @@
   border-radius: 50%;
 }
 
-#range__control .noUi-handle::after {
+#js-range-control .noUi-handle::after {
   display: none;
+}
+
+#js-range-control .noUi-handle:hover::before,
+#js-range-control .noUi-handle:focus::before {
+  background-color: rgb($base-primary, 0.25);
+  outline: 2px solid $base-white;
+  outline-offset: -2px;
+}
+
+#js-range-control .noUi-handle:active::before {
+  background-color: $primary-lighter;
+  outline: 2px solid $base-white;
+  outline-offset: -2px;
 }
