@@ -6,7 +6,6 @@ const heroBlock = document.querySelector('.hero');
 const sliderList = heroBlock.querySelector('.slider');
 const sliderItems = sliderList.querySelectorAll('.slider__item');
 const sliderPagination = heroBlock.querySelector('.slider-pagination');
-const sliderPaginationButtons = sliderPagination.querySelectorAll('.slider-pagination__button');
 const sliderPrevButton = heroBlock.querySelector('.slider-button-prev');
 const sliderNextButton = heroBlock.querySelector('.slider-button-next');
 
@@ -65,5 +64,24 @@ const onPrevButtonClick = () => {
   isFirstSlideShown();
 };
 sliderPrevButton.addEventListener('click', onPrevButtonClick);
-// sliderNextButton.click();
 
+const onPaginationClick = (evt) => {
+  const selectedPaginationButton = evt.target;
+  if (selectedPaginationButton.classList.contains('slider-pagination__button') === false) {
+    return;
+  }
+  const isNotActiveButton = selectedPaginationButton.classList.contains('slider-pagination__button--active') === false;
+  if (isNotActiveButton) {
+    const activeButton = sliderPagination.querySelector('.slider-pagination__button--active');
+    activeButton.classList.remove('slider-pagination__button--active');
+    selectedPaginationButton.classList.add('slider-pagination__button--active');
+    const sliderPaginationItems = sliderPagination.querySelectorAll('.slider-pagination__button');
+    const activeButtonIndex = Array.from(sliderPaginationItems).findIndex((item) => item.classList.contains('slider-pagination__button--active'));
+    console.log(activeButtonIndex);
+    sliderItems.forEach((item) => item.classList.add('slider__item--hidden'));
+    sliderItems[activeButtonIndex].classList.remove('slider__item--hidden');
+    isFirstSlideShown();
+    isLastSlideShown();
+  }
+};
+sliderPagination.addEventListener('click', onPaginationClick);
