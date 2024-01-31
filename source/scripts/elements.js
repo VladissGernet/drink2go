@@ -8,6 +8,10 @@ const sliderPagination = heroBlock.querySelector('.slider-pagination');
 const sliderPaginationItems = sliderPagination.querySelectorAll('.slider-pagination__button');
 const sliderPrevButton = heroBlock.querySelector('.slider-button-prev');
 const sliderNextButton = heroBlock.querySelector('.slider-button-next');
+const priceSlider = document.querySelector('.filter-range__controls');
+const priceSliderStaticWrapper = priceSlider.querySelector('.filter-range__static-range-wrapper');
+const priceInputMin = document.querySelector('.js-filters-form-price-min');
+const priceInputMax = document.querySelector('.js-filters-form-price-max');
 
 export {
   siteNavigation,
@@ -18,5 +22,9 @@ export {
   sliderPagination,
   sliderPaginationItems,
   sliderPrevButton,
-  sliderNextButton
+  sliderNextButton,
+  priceSlider,
+  priceSliderStaticWrapper,
+  priceInputMin,
+  priceInputMax,
 };

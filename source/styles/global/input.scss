@@ -10,6 +10,16 @@
   background-color: $base-white;
 }
 
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
 .input:focus {
   outline-color: $primary-darker;
 }
