@@ -79,6 +79,13 @@
 }
 
 .main-navigation__header-button--menu {
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
