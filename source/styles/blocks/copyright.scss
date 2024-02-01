@@ -25,6 +25,7 @@
 .copyright__text--link:hover,
 .copyright__text--link:focus {
   color: $base-primary;
+  outline: none;
 }
 
 .copyright__text--link:active {

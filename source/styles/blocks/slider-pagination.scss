@@ -50,6 +50,10 @@
   }
 }
 
+.slider-pagination__button:focus {
+  outline: none;
+}
+
 .slider-pagination__button:not(.slider-pagination__button--active):hover::before,
 .slider-pagination__button:not(.slider-pagination__button--active):focus::before {
   background-color: rgb($base-primary, 0.25);

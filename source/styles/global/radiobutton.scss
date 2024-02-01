@@ -42,8 +42,11 @@
   box-shadow: inset 0 0 0 2px $base-white;
 }
 
-.radiobutton__control:focus + .radiobutton__label {
-  outline: 1px dotted $base-black;
+.radiobutton__control:hover + .radiobutton__label::before,
+.radiobutton__control:focus + .radiobutton__label::before {
+  background-color: rgb($base-primary, 0.25);
+  border-color: $base-primary;
+  box-shadow: inset 0 0 0 2px $base-white;
 }
 
 .radiobutton__control:disabled + .radiobutton__label {
@@ -56,6 +59,18 @@
 }
 
 .radiobutton__control:checked:disabled + .radiobutton__label::before {
+  border-color: $light-grey;
+  background-color: $light-grey;
+}
+
+.radiobutton__control:disabled:hover + .radiobutton__label::before,
+.radiobutton__control:disabled:focus + .radiobutton__label::before {
+  border-color: $light-grey;
+  background-color: $base-white;
+}
+
+.radiobutton__control:checked:disabled:hover + .radiobutton__label::before,
+.radiobutton__control:checked:disabled:focus + .radiobutton__label::before {
   border-color: $light-grey;
   background-color: $light-grey;
 }
