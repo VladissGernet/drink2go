@@ -68,11 +68,12 @@
 }
 
 .slider-controls__button:active {
-  background-image: linear-gradient(
-    90deg,
-    rgb($base-primary, 0.25) 0%,
-    transparent 100%
-  );
+  background-image:
+    linear-gradient(
+      90deg,
+      rgb($base-primary, 0.25) 0%,
+      transparent 100%
+    );
 }
 
 .slider-controls__button:disabled {

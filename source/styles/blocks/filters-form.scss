@@ -40,6 +40,10 @@
 }
 
 .filters-form__fieldset--country {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
   @media (min-width: $tablet-width) {
     grid-area: country;
   }
@@ -47,12 +51,6 @@
   @media (min-width: $desktop-width) {
     margin-top: 30px;
   }
-}
-
-.filters-form__fieldset--country {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
 }
 
 .filters-form__fieldset-caption {
