@@ -3,6 +3,7 @@ import {
   priceSliderStaticWrapper,
   priceInputMin,
   priceInputMax,
+  filtersForm
 } from './elements.js';
 
 import { defaultSliderValues } from './constants.js';
@@ -32,6 +33,10 @@ const initSliderRange = () => {
   priceSlider.noUiSlider.on('update', () => {
     priceInputMin.value = priceSlider.noUiSlider.get()[0];
     priceInputMax.value = priceSlider.noUiSlider.get()[1];
+  });
+
+  filtersForm.addEventListener('reset', () => {
+    priceSlider.noUiSlider.set([min, 920]);
   });
 };
 

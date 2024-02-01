@@ -12,6 +12,7 @@ const priceSlider = document.querySelector('.filter-range__controls');
 const priceSliderStaticWrapper = priceSlider.querySelector('.filter-range__static-range-wrapper');
 const priceInputMin = document.querySelector('.js-filters-form-price-min');
 const priceInputMax = document.querySelector('.js-filters-form-price-max');
+const filtersForm = document.querySelector('.filters-form');
 
 export {
   siteNavigation,
@@ -27,4 +28,5 @@ export {
   priceSliderStaticWrapper,
   priceInputMin,
   priceInputMax,
+  filtersForm
 };

@@ -273,7 +273,8 @@
           <p class="page-section__subtitle">Каталог кофейных напитков</p>
         </header>
         <!-- Filters form -->
-        <form class="page-section__filters filters-form" action="#" method="GET">
+        <form class="page-section__filters filters-form" method="post" enctype="multipart/form-data"
+          action="https://echo.htmlacademy.ru" autocomplete="off">
           <h3 class="visually-hidden">Фильтры</h3>
           <!-- Price -->
           <fieldset class="filters-form__fieldset filters-form__fieldset--price">
@@ -352,7 +353,7 @@
           <!-- Form buttons -->
           <div class="filters-form__buttons-wrapper">
             <button class="filters-form__button button" type="submit">Применить</button>
-            <button class="filters-form__button button button--simple" type="button">Сбросить</button>
+            <button class="filters-form__button button button--simple" type="reset">Сбросить</button>
           </div>
         </form>
         <!-- Sorting -->
@@ -360,6 +361,8 @@
           <label class="sorting__label" for="sorting">Сортировка:</label>
           <select class="sorting__select" name="sorting" id="sorting">
             <option value="default">по умолчанию</option>
+            <option value="tiles">плиткой</option>
+            <option value="lines">строки</option>
           </select>
         </div>
         <!-- Catalog -->
