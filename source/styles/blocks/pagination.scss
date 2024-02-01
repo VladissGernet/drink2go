@@ -44,6 +44,8 @@
   color: $base-black;
   font-weight: 600;
   cursor: default;
+  pointer-events: none;
+  text-decoration: none;
 }
 
 .pagination__link:not(.pagination__link--active):hover,
