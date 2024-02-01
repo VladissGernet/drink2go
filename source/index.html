@@ -6,7 +6,7 @@
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
-  <!--  preload-->
+  <!--  preload -->
   <link rel="preload" href="styles/styles.css" as="style" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
@@ -42,8 +42,8 @@
       <!-- Logo -->
       <a class="main-navigation__logo logo" href="#">
         <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
+          <source type="image/svg" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
+          <source type="image/svg" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
           <img class="logo__img" src="images/logo/logo.svg" width="32" height="36"
             alt="Логотип интернет-магазина кофейных напитков Drink2Go.">
         </picture>
@@ -72,7 +72,7 @@
         <li class="user-navigation__item">
           <a class="user-navigation__link main-navigation__header-button" href="#">
             <svg class="user-navigation__img" width="16" height="16">
-              <use xlink:href="images/icons/stack.svg#user"></use>
+              <use href="images/icons/stack.svg#user"></use>
             </svg>
             <span class="user-navigation__label">Войти</span>
           </a>
@@ -80,7 +80,7 @@
         <li class="user-navigation__item">
           <a class="user-navigation__link main-navigation__header-button" href="#">
             <svg class="user-navigation__img" width="16" height="16">
-              <use xlink:href="images/icons/stack.svg#cart"></use>
+              <use href="images/icons/stack.svg#cart"></use>
             </svg>
             <span class="user-navigation__label">Корзина</span>
           </a>
@@ -106,13 +106,13 @@
         <div class="hero__slider-controls slider-controls">
           <button class="slider-controls__button slider-controls__button--prev slider-button-prev" type="button">
             <svg class="slider-controls__image" width="11" height="20">
-              <use xlink:href="images/icons/stack.svg#slider-left-arrow"></use>
+              <use href="images/icons/stack.svg#slider-left-arrow"></use>
             </svg>
             <span class="visually-hidden">Предыдущее фото.</span>
           </button>
           <button class="slider-controls__button slider-controls__button--next slider-button-next" type="button">
             <svg class="slider-controls__image" width="11" height="20">
-              <use xlink:href="images/icons/stack.svg#slider-left-arrow"></use>
+              <use href="images/icons/stack.svg#slider-left-arrow"></use>
             </svg>
             <span class="visually-hidden">Следующее фото.</span>
           </button>
@@ -141,9 +141,9 @@
                   srcset="images/goods/flat_white_tablet@1x.webp 1x, images/goods/flat_white_tablet@2x.webp 2x">
                 <source type="image/webp"
                   srcset="images/goods/flat_white_mobile@1x.webp 1x, images/goods/flat_white_mobile@2x.webp 2x">
-                <source media="(min-width: 1140px)"
+                <source type="image/png" media="(min-width: 1140px)"
                   srcset="images/goods/flat_white_desktop@1x.png 1x, images/goods/flat_white_desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
+                <source type="image/png" media="(min-width: 768px)"
                   srcset="images/goods/flat_white_tablet@1x.png 1x, images/goods/flat_white_tablet@2x.png 2x">
                 <img class="slider__image" src="images/goods/flat_white_mobile@1x.png"
                   srcset="images/goods/flat_white_mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт.">
@@ -173,9 +173,9 @@
                   srcset="images/goods/flat_white_tablet@1x.webp 1x, images/goods/flat_white_tablet@2x.webp 2x">
                 <source type="image/webp"
                   srcset="images/goods/flat_white_mobile@1x.webp 1x, images/goods/flat_white_mobile@2x.webp 2x">
-                <source media="(min-width: 1140px)"
+                <source type="image/png" media="(min-width: 1140px)"
                   srcset="images/goods/flat_white_desktop@1x.png 1x, images/goods/flat_white_desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
+                <source type="image/png" media="(min-width: 768px)"
                   srcset="images/goods/flat_white_tablet@1x.png 1x, images/goods/flat_white_tablet@2x.png 2x">
                 <img class="slider__image" src="images/goods/flat_white_mobile@1x.png"
                   srcset="images/goods/flat_white_mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт.">
@@ -205,9 +205,9 @@
                   srcset="images/goods/flat_white_tablet@1x.webp 1x, images/goods/flat_white_tablet@2x.webp 2x">
                 <source type="image/webp"
                   srcset="images/goods/flat_white_mobile@1x.webp 1x, images/goods/flat_white_mobile@2x.webp 2x">
-                <source media="(min-width: 1140px)"
+                <source type="image/png" media="(min-width: 1140px)"
                   srcset="images/goods/flat_white_desktop@1x.png 1x, images/goods/flat_white_desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
+                <source type="image/png" media="(min-width: 768px)"
                   srcset="images/goods/flat_white_tablet@1x.png 1x, images/goods/flat_white_tablet@2x.png 2x">
                 <img class="slider__image" src="images/goods/flat_white_mobile@1x.png"
                   srcset="images/goods/flat_white_mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт.">
@@ -494,7 +494,7 @@
             <a class="pagination__link pagination__link--prev" href="#">
               Назад
               <svg class="pagination__icon" width="10" height="10">
-                <use xlink:href="images/icons/stack.svg#pagination-arrow-left"></use>
+                <use href="images/icons/stack.svg#pagination-arrow-left"></use>
               </svg>
             </a>
           </li>
@@ -511,7 +511,7 @@
             <a class="pagination__link pagination__link--next" href="#">
               Вперёд
               <svg class="pagination__icon" width="10" height="10">
-                <use xlink:href="images/icons/stack.svg#pagination-arrow-left"></use>
+                <use href="images/icons/stack.svg#pagination-arrow-left"></use>
               </svg>
             </a>
           </li>
@@ -528,9 +528,10 @@
           <source type="image/webp" media="(min-width: 768px)"
             srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
           <source type="image/webp" srcset="images/map/map-mobile@1x.webp 1x, images/map/map-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)"
+          <source type="image/jpg" media="(min-width: 1440px)"
             srcset="images/map/map-desktop@1x.jpg 1x, images/map/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="images/map/map-tablet@1x.jpg 1x, images/map/map-tablet@2x.jpg 2x">
+          <source type="image/jpg" media="(min-width: 768px)"
+            srcset="images/map/map-tablet@1x.jpg 1x, images/map/map-tablet@2x.jpg 2x">
           <img class="map__image" src="images/map/map-mobile@1x.jpg" srcset="images/map/map-mobile@2x.jpg 2x"
             width="320" height="420" alt="Карта местоположения интернет-магазина кофейных напитков Drink2Go.">
         </picture>
@@ -544,7 +545,7 @@
       <!-- Logo -->
       <a class="footer__logo logo" href="#">
         <picture>
-          <source media="(min-width: 768px)" srcset="images/logo/logo-desktop.svg">
+          <source type="image/svg" media="(min-width: 768px)" srcset="images/logo/logo-desktop.svg">
           <img class="footer__logo-image logo__img" src="images/logo/logo-tablet.svg" width="32" height="36"
             alt="Логотип интернет-магазина кофейных напитков Drink2Go.">
         </picture>
@@ -558,7 +559,7 @@
           <a class="social__link" href="#">
             <span class="visually-hidden">Вконтакте.</span>
             <svg class="social__icon" width="40" height="40">
-              <use xlink:href="images/icons/stack.svg#vk"></use>
+              <use href="images/icons/stack.svg#vk"></use>
             </svg>
           </a>
         </li>
@@ -566,7 +567,7 @@
           <a class="social__link" href="#">
             <span class="visually-hidden">Pinterest.</span>
             <svg class="social__icon" width="40" height="40">
-              <use xlink:href="images/icons/stack.svg#pinterest"></use>
+              <use href="images/icons/stack.svg#pinterest"></use>
             </svg>
           </a>
         </li>
@@ -574,7 +575,7 @@
           <a class="social__link" href="#">
             <span class="visually-hidden">Одноклассники.</span>
             <svg class="social__icon" width="40" height="40">
-              <use xlink:href="images/icons/stack.svg#ok"></use>
+              <use href="images/icons/stack.svg#ok"></use>
             </svg>
           </a>
         </li>
@@ -632,7 +633,7 @@
       <a class="copyright__text copyright__text--link" href="https://htmlacademy.ru/intensive/adaptive">HTML
         Academy
         <svg class="copyright__logo" width="12" height="16">
-          <use xlink:href="images/icons/stack.svg#html-academy-logo"></use>
+          <use href="images/icons/stack.svg#html-academy-logo"></use>
         </svg>
       </a>
     </div>
