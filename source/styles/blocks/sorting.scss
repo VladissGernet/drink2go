@@ -38,5 +38,6 @@
 }
 
 .sorting__select:focus {
+  outline: none;
   background-image: url("../../images/icons/stack.svg#select-arrow-up");
 }
