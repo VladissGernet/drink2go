@@ -30,14 +30,17 @@
   position: relative;
   padding-top: 20px;
   padding-bottom: 60px;
+  min-height: 656px;
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
+    min-height: 888px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 30px;
     padding-bottom: 84px;
+    min-height: 714px;
   }
 }
 
