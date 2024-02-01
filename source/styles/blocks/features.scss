@@ -3,7 +3,7 @@
   padding-bottom: 60px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 66px;
+    padding: 0 30px 98px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,17 +32,20 @@
 .features__list {
   @include list-reset;
   margin-top: 34px;
+  min-height: 142px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 60px;
-    gap: 18px 30px;
+    gap: 50px 30px;
+    min-height: 118px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     margin-top: 80px;
+    min-height: 202px;
   }
 }
 
@@ -57,6 +60,7 @@
     background-position: top left;
     padding-top: 0;
     padding-left: 70px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
