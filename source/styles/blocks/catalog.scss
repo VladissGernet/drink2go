@@ -30,7 +30,7 @@
 
 .catalog__item:hover,
 .catalog__item:focus-within {
-  box-shadow: 0px 5px 15px 0px rgb($base-black, 0.15);
+  box-shadow: 0 5px 15px 0 rgb($base-black, 0.15);
 }
 
 .catalog__item:last-child {
