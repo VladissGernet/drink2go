@@ -72,14 +72,17 @@
 
 .page-section__list {
   margin-top: 14px;
+  // min-height: 421px;
 
   @media (min-width: $tablet-width) {
     margin-top: 26px;
+    // min-height: 441px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: catalog;
     margin-top: 4px;
+    min-height: 952px;
   }
 }
 
