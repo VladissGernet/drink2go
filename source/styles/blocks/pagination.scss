@@ -46,6 +46,7 @@
   cursor: default;
   pointer-events: none;
   text-decoration: none;
+  outline: none;
 }
 
 .pagination__link:not(.pagination__link--active):hover,
