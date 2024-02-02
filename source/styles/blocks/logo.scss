@@ -10,6 +10,7 @@
 .logo__img {
   width: 32px;
   height: 36px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     width: 82px;

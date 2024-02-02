@@ -84,6 +84,8 @@
 }
 
 .slider__image {
+  display: block;
+
   @media (min-width: $tablet-width) {
     width: 476px;
     height: 476px;
